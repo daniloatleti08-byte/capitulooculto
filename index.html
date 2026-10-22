@@ -14,30 +14,109 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- =====================================================
-       META PIXEL — Cole o código do seu pixel abaixo
+       META PIXEL
        ===================================================== -->
-  <!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1684026826038026');
-  fbq('track', 'PageView');
-</script>
-<noscript>
-  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1684026826038026&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1684026826038026');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1684026826038026&ev=PageView&noscript=1"/>
+  </noscript>
 
   <link rel="stylesheet" href="style.css">
   
   <style>
-    /* Estilos do Botão do WhatsApp */
+    /* ==========================================
+       ESTILOS DO OVERLAY DE SOM (VSL)
+       ========================================== */
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    #youtube-player {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* Impede o usuário de pausar clicando no vídeo antes de tirar do mudo */
+    }
+
+    /* A camada escura que fica por cima do vídeo */
+    #unmute-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    /* O botão gigante piscando */
+    .unmute-btn {
+      background-color: #d4af37; /* Dourado */
+      color: #000;
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      border-radius: 50px;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      animation: pulse 1.5s infinite;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+    }
+
+    .unmute-btn svg {
+      width: 24px;
+      height: 24px;
+      fill: #000;
+    }
+
+    .overlay-text {
+      color: #fff;
+      margin-top: 15px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
+      50% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+    }
+
+    /* Ocultar CTA durante delay */
+    .hidden-delay {
+      display: none !important;
+    }
+
+    /* Botão WhatsApp Fixo */
     .whatsapp-btn {
       position: fixed;
       bottom: 20px;
@@ -55,43 +134,36 @@
       z-index: 1000;
       transition: transform 0.3s ease;
     }
-
-    .whatsapp-btn:hover {
-      transform: scale(1.1);
-    }
-
-    .whatsapp-btn svg {
-      width: 35px;
-      height: 35px;
-      fill: white;
-    }
-
-    /* Estilo para ocultar o botão durante o Delay de 2 minutos */
-    .hidden-delay {
-      display: none !important;
-    }
+    .whatsapp-btn:hover { transform: scale(1.1); }
+    .whatsapp-btn svg { width: 35px; height: 35px; fill: white; }
   </style>
 </head>
 <body>
 
-  <!-- ==================== 2. HERO ==================== -->
   <section class="hero" id="hero">
     <div class="container">
       <div class="kicker">A Descoberta científica que Abalou o Vaticano</div>
-
       <h1>Cientistas usam luz ultravioleta e revelam o <span class="highlight">"Capítulo Oculto"</span> da Bíblia capaz de destravar sua vida em 7 dias.</h1>
+      <p class="lead">Apagado por mãos humanas há mais de 1.500 anos, este texto sagrado acaba de ser recuperado.</p>
 
-      <p class="lead">Apagado por mãos humanas há mais de 1.500 anos, este texto sagrado acaba de ser recuperado. Descubra o verdadeiro segredo da prosperidade e paz mental que foi censurado da sua Bíblia atual.</p>
-
-      <!-- Player de vídeo -->
-      <p class="video-label"> Assista (3 min 50 s) — ative o som</p>
-      <div class="video-wrapper" id="video-player">
-        <!-- Adicionado autoplay=1 e mute=1 no final do link -->
-        <iframe src="https://www.youtube-nocookie.com/embed/7JGLUBvvteI?rel=0&modestbranding=1&playsinline=1&autoplay=1&mute=1" title="Apresentação O Capítulo Oculto" allowfullscreen loading="lazy"></iframe>
+      <!-- NOVO PLAYER VSL OTIMIZADO -->
+      <div class="video-container">
+        <!-- Onde a API do YouTube vai injetar o player -->
+        <div id="youtube-player"></div>
+        
+        <!-- A Sobreposição (Overlay) com o botão de unmute -->
+        <div id="unmute-overlay">
+          <div class="unmute-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+              <path d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"/>
+            </svg>
+            CLIQUE AQUI PARA OUVIR O SOM
+          </div>
+          <div class="overlay-text">Seu vídeo já começou...</div>
+        </div>
       </div>
 
-      <!-- Adicionado a classe "hidden-delay" ao botão e ao textinho -->
-      <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn hidden-delay" id="cta-hero">
+      <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn hidden-delay" id="cta-hero" style="margin-top: 30px;">
         <span class="cta-icon"></span>
         QUERO REVELAR O CAPÍTULO OCULTO
       </a>
@@ -294,24 +366,6 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
     </div>
   </section>
 
-  <!-- ==================== 10. DEPOIMENTOS ==================== -->
-  <!--
-    ATENÇÃO: Publique esta seção SOMENTE se existirem depoimentos reais,
-    com autorização por escrito: primeiro nome, cidade, texto sem edição
-    que mude o sentido e nenhum que prometa ganho financeiro ou cura.
-    Sem depoimentos reais, mantenha esta seção comentada.
-
-  <section class="section section-testimonials" id="depoimentos">
-    <div class="container container-narrow">
-      <h2 class="text-center">O que dizem os leitores</h2>
-      <div class="testimonial-card">
-        <p class="testimonial-text">"Texto do depoimento aqui."</p>
-        <p class="testimonial-author">— Nome, Cidade</p>
-      </div>
-    </div>
-  </section>
-  -->
-
   <!-- ==================== 11. PERGUNTAS FREQUENTES ==================== -->
   <section class="section section-faq" id="faq">
     <div class="container container-narrow">
@@ -402,16 +456,58 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
   <!-- Botão Flutuante do WhatsApp -->
   <a href="https://wa.me/5511914152947?text=Olá!%20Gostaria%20de%20tirar%20dúvidas%20sobre%20O%20Capítulo%20Oculto%20-%20Frequência%20da%20Prosperidade." target="_blank" class="whatsapp-btn" aria-label="Fale conosco no WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-      <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
       <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33.6 0-66.7-9-95.6-26.1l-6.9-4.1-71 18.6 18.9-69.2-4.5-7.2c-18.7-29.9-28.7-64.6-28.7-100.2 0-103.9 84.6-188.5 188.6-188.5 50.4 0 97.7 19.6 133.4 55.3s55.2 82.9 55.2 133.4c0 103.9-84.6 188.6-188.6 188.6zM324 286.9c-5.5-2.7-32.5-16.1-37.5-17.9-5-1.8-8.7-2.7-12.4 2.7-3.7 5.5-14.2 17.9-17.4 21.6-3.2 3.7-6.5 4.1-12 1.4-5.5-2.7-23.2-8.5-44.2-27.2-16.3-14.6-27.3-32.6-30.5-38.1-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.5 5.5-6.4 8.3-9.6 2.7-3.2 3.7-5.5 5.5-9.1 1.8-3.7.9-7.1-.5-9.8-1.4-2.7-12.4-29.9-17-40.9-4.5-10.8-9-9.3-12.4-9.5-3.2-.2-6.9-.2-10.5-.2-3.7 0-9.6 1.4-14.6 6.9-5 5.5-19.2 18.8-19.2 45.8s19.7 53.1 22.4 56.7c2.7 3.7 38.7 59.1 93.7 82.8 13.1 5.7 23.3 9.1 31.3 11.6 13.2 4.2 25.1 3.6 34.6 2.2 10.6-1.5 32.5-13.3 37.1-26.1 4.6-12.8 4.6-23.8 3.2-26.1-1.5-2.3-5.5-3.7-11-6.4z"/>
     </svg>
   </a>
 
-  <!-- Script de animações e interações -->
-  <script src="script.js"></script>
+  <!-- =====================================================
+      SCRIPTS DO YOUTUBE API E DELAY
+      ===================================================== -->
+  <!-- Carrega a API do YouTube Iframe -->
+  <script src="https://www.youtube.com/iframe_api"></script>
   
-  <!-- Script para exibir o botão de compras após 2 minutos (120.000 ms) -->
   <script>
+    var player;
+    
+    // Função chamada automaticamente pela API do YouTube quando ela está pronta
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('youtube-player', {
+        videoId: '7JGLUBvvteI', // <-- ID do seu vídeo do YouTube
+        playerVars: {
+          'autoplay': 1,      // Autoplay ligado
+          'mute': 1,          // PRECISA estar no mudo para o autoplay funcionar
+          'controls': 0,      // Esconde os controles nativos
+          'rel': 0,
+          'modestbranding': 1,
+          'playsinline': 1
+        },
+        events: {
+          'onReady': onPlayerReady
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      // Quando o vídeo carrega, ele já começa a tocar (mudo)
+      event.target.playVideo();
+
+      // Configura o clique no overlay gigante
+      var overlay = document.getElementById('unmute-overlay');
+      overlay.addEventListener('click', function() {
+        // Tira do mudo
+        player.unMute();
+        // Volta para o segundo 0 para a pessoa não perder nada
+        player.seekTo(0);
+        // Garante que está tocando
+        player.playVideo();
+        // Permite que o usuário clique no vídeo (pausar) agora que tirou do mudo
+        document.getElementById('youtube-player').style.pointerEvents = "auto";
+        // Esconde a camada do botão
+        overlay.style.display = 'none';
+      });
+    }
+
+    // Script para exibir os botões de vendas após 2 minutos (120.000 ms)
     setTimeout(function() {
       var elements = document.querySelectorAll('.hidden-delay');
       elements.forEach(function(el) {
@@ -419,5 +515,6 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
       });
     }, 120000);
   </script>
+
 </body>
 </html>
