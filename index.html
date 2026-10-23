@@ -516,25 +516,34 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
     }, 120000);
   </script>
 	<!-- =====================================================
-       SCRIPT DE RASTREIO AVANÇADO E REPASSE DE UTMS
+       SCRIPT DE RASTREIO AVANÇADO (COM MEMÓRIA SESSION)
        ===================================================== -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // 1. Repasse de Parâmetros (UTMs e fbclid) para o Checkout da Cakto
-      const urlParams = window.location.search;
       const buyLinks = document.querySelectorAll('a[href*="pay.cakto.com.br"]');
-      
+      let urlParams = window.location.search;
+
+      // 1. Salvar os parâmetros na memória caso o servidor limpe a URL
+      if (urlParams) {
+        sessionStorage.setItem('parametros_rastreio', urlParams);
+      } else {
+        // Se a URL estiver limpa, tentar recuperar da memória
+        urlParams = sessionStorage.getItem('parametros_rastreio') || "";
+      }
+
+      // 2. Repassar os parâmetros para os botões da Cakto
       if (urlParams) {
         buyLinks.forEach(function(link) {
           if (link.href.indexOf('?') === -1) {
-            link.href += urlParams; // Adiciona os parâmetros se não houver interrogação
+            link.href += urlParams; 
           } else {
-            link.href += '&' + urlParams.substring(1); // Concatena se já houver outros parâmetros
+            // Remove o '?' extra se for concatenar
+            link.href += '&' + urlParams.substring(1); 
           }
         });
       }
 
-      // 2. Disparo do Evento InitiateCheckout no clique
+      // 3. Disparo do Evento InitiateCheckout no clique
       buyLinks.forEach(function(link) {
         link.addEventListener('click', function() {
           if (typeof fbq === 'function') {
