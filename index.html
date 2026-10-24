@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>O Capítulo Oculto — Prosperidade | Casa de São Bento</title>
-  <meta name="description" content="Cientistas usam luz ultravioleta e revelam o Capítulo Oculto da Bíblia. Descubra o verdadeiro segredo da prosperidade e paz mental censurado há mais de 1.500 anos.">
+  <meta name="description"
+    content="Cientistas usam luz ultravioleta e revelam o Capítulo Oculto da Bíblia. Descubra o verdadeiro segredo da prosperidade e paz mental censurado há mais de 1.500 anos.">
   <meta name="theme-color" content="#070604">
   <meta property="og:title" content="O Capítulo Oculto — Prosperidade">
-  <meta property="og:description" content="Apagado por mãos humanas há mais de 1.500 anos, este texto sagrado acaba de ser recuperado. Descubra o verdadeiro segredo da prosperidade e paz mental.">
+  <meta property="og:description"
+    content="Apagado por mãos humanas há mais de 1.500 anos, este texto sagrado acaba de ser recuperado. Descubra o verdadeiro segredo da prosperidade e paz mental.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
   <!-- =====================================================
        META PIXEL
        ===================================================== -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1684026826038026');
     fbq('track', 'PageView');
   </script>
   <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1684026826038026&ev=PageView&noscript=1"/>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1684026826038026&ev=PageView&noscript=1" />
   </noscript>
 
   <link rel="stylesheet" href="style.css">
-  
+
   <style>
     /* ==========================================
        ESTILOS DO OVERLAY DE SOM (VSL)
@@ -46,7 +55,7 @@
       border-radius: 8px;
       overflow: hidden;
       aspect-ratio: 16/9;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     }
 
     #youtube-player {
@@ -55,7 +64,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      pointer-events: none; /* Impede o usuário de pausar clicando no vídeo antes de tirar do mudo */
+      pointer-events: none;
+      /* Impede o usuário de pausar clicando no vídeo antes de tirar do mudo */
     }
 
     /* A camada escura que fica por cima do vídeo */
@@ -76,7 +86,8 @@
 
     /* O botão gigante piscando */
     .unmute-btn {
-      background-color: #d4af37; /* Dourado */
+      background-color: #d4af37;
+      /* Dourado */
       color: #000;
       font-family: 'Inter', sans-serif;
       font-weight: 800;
@@ -106,9 +117,20 @@
     }
 
     @keyframes pulse {
-      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
-      50% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
-      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+      }
+
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgba(212, 175, 55, 0);
+      }
+
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+      }
     }
 
     /* Ocultar CTA durante delay */
@@ -130,32 +152,43 @@
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
       z-index: 1000;
       transition: transform 0.3s ease;
     }
-    .whatsapp-btn:hover { transform: scale(1.1); }
-    .whatsapp-btn svg { width: 35px; height: 35px; fill: white; }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-btn svg {
+      width: 35px;
+      height: 35px;
+      fill: white;
+    }
   </style>
 </head>
+
 <body>
 
   <section class="hero" id="hero">
     <div class="container">
       <div class="kicker">A Descoberta científica que Abalou o Vaticano</div>
-      <h1>Cientistas usam luz ultravioleta e revelam o <span class="highlight">"Capítulo Oculto"</span> da Bíblia capaz de destravar sua vida em 7 dias.</h1>
+      <h1>Cientistas usam luz ultravioleta e revelam o <span class="highlight">"Capítulo Oculto"</span> da Bíblia capaz
+        de destravar sua vida em 7 dias.</h1>
       <p class="lead">Apagado por mãos humanas há mais de 1.500 anos, este texto sagrado acaba de ser recuperado.</p>
 
       <!-- NOVO PLAYER VSL OTIMIZADO -->
       <div class="video-container">
         <!-- Onde a API do YouTube vai injetar o player -->
         <div id="youtube-player"></div>
-        
+
         <!-- A Sobreposição (Overlay) com o botão de unmute -->
         <div id="unmute-overlay">
           <div class="unmute-btn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-              <path d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"/>
+              <path
+                d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z" />
             </svg>
             CLIQUE AQUI PARA OUVIR O SOM
           </div>
@@ -163,7 +196,8 @@
         </div>
       </div>
 
-      <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn hidden-" id="cta-hero" style="margin-top: 30px;">
+      <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn hidden-" id="cta-hero"
+        style="margin-top: 30px;">
         <span class="cta-icon"></span>
         QUERO REVELAR O CAPÍTULO OCULTO
       </a>
@@ -177,17 +211,21 @@
       <div class="section-header">
         <div class="kicker kicker-gold">O MISTÉRIO REVELADO SOB A LUZ</div>
         <h2>Você já sentiu que ora, ora... e nada na sua vida sai do lugar?</h2>
-        <p class="section-intro">A culpa pode não ser da sua fé. O bloqueio que você sente na sua vida financeira e espiritual tem uma explicação histórica que o mundo só descobriu agora.</p>
+        <p class="section-intro">A culpa pode não ser da sua fé. O bloqueio que você sente na sua vida financeira e
+          espiritual tem uma explicação histórica que o mundo só descobriu agora.</p>
       </div>
 
       <div class="facts-grid">
         <div class="fact-card">
           <div class="fact-label">QUEM</div>
-          <p>Em 2023, o pesquisador Grigory Kessel, trabalhando para a Academia Austríaca de Ciências, fez algo impensável. Com equipamentos avançados de luz ultravioleta, ele olhou para as páginas de um antigo manuscrito na Biblioteca do Vaticano e viu algo brilhando no fundo.</p>
+          <p>Em 2023, o pesquisador Grigory Kessel, trabalhando para a Academia Austríaca de Ciências, fez algo
+            impensável. Com equipamentos avançados de luz ultravioleta, ele olhou para as páginas de um antigo
+            manuscrito na Biblioteca do Vaticano e viu algo brilhando no fundo.</p>
         </div>
         <div class="fact-card">
           <div class="fact-label">OQUE ENCONTRARAM</div>
-          <p>Eram palavras. Uma tradução em aramaico/siríaco antigo do Evangelho de Mateus. O impressionante? Esse texto foi apagado e raspado duas vezes pelos monges na Idade Média.</p>
+          <p>Eram palavras. Uma tradução em aramaico/siríaco antigo do Evangelho de Mateus. O impressionante? Esse texto
+            foi apagado e raspado duas vezes pelos monges na Idade Média.</p>
         </div>
         <div class="fact-card">
           <div class="fact-label">COMO</div>
@@ -195,24 +233,33 @@
         </div>
         <div class="fact-card">
           <div class="fact-label">PORQUE ELES TENTARAM APAGAR AS PALAVRAS EXATAS DE JESUS?</div>
-          <p>Se você se sente cansado, trabalha e não prospera, e acha que suas orações não são ouvidas, preste muita atenção. A versão que lemos hoje na Bíblia moderna perdeu a "chave" da ação.
+          <p>Se você se sente cansado, trabalha e não prospera, e acha que suas orações não são ouvidas, preste muita
+            atenção. A versão que lemos hoje na Bíblia moderna perdeu a "chave" da ação.
 
-Enquanto a Bíblia comum esconde detalhes cruciais sobre como "pedir e trabalhar", o texto siríaco iluminado pela luz UV revelou as ações exatas que os primeiros cristãos usavam para atrair prosperidade e descanso. O segredo da verdadeira manifestação havia sido apagado. Até agora.</p>
+            Enquanto a Bíblia comum esconde detalhes cruciais sobre como "pedir e trabalhar", o texto siríaco iluminado
+            pela luz UV revelou as ações exatas que os primeiros cristãos usavam para atrair prosperidade e descanso. O
+            segredo da verdadeira manifestação havia sido apagado. Até agora.</p>
         </div>
         <div class="fact-card fact-card-wide">
           <div class="fact-label">A SURPRESA</div>
-          <p>É um "manuscrito inteiro". Há cerca de 1.300 anos o texto foi raspado para reaproveitar o pergaminho, que era caro. Escreveram outro texto por cima; mais tarde, esse também foi apagado e deu lugar a um terceiro. Resultado: <strong>três camadas de escrita</strong>, com o Evangelho na mais profunda.</p>
+          <p>É um "manuscrito inteiro". Há cerca de 1.300 anos o texto foi raspado para reaproveitar o pergaminho, que
+            era caro. Escreveram outro texto por cima; mais tarde, esse também foi apagado e deu lugar a um terceiro.
+            Resultado: <strong>três camadas de escrita</strong>, com o Evangelho na mais profunda.</p>
         </div>
       </div>
 
       <div class="sources-box">
-        <p><strong>Fontes:</strong> artigo de Grigory Kessel na revista <a href="https://doi.org/10.1017/S0028688523000097" target="_blank" rel="noopener">New Testament Studies</a> (2023, acesso aberto) e <a href="https://www.oeaw.ac.at/en/news/a-hidden-satisfying-satisfying-text" target="_blank" rel="noopener">comunicado da Academia Austríaca de Ciências</a>.</p>
+        <p><strong>Fontes:</strong> artigo de Grigory Kessel na revista <a
+            href="https://doi.org/10.1017/S0028688523000097" target="_blank" rel="noopener">New Testament Studies</a>
+          (2023, acesso aberto) e <a href="https://www.oeaw.ac.at/en/news/a-hidden-satisfying-satisfying-text"
+            target="_blank" rel="noopener">comunicado da Academia Austríaca de Ciências</a>.</p>
       </div>
 
       <div class="transparency-box">
         <div class="transparency-icon"></div>
         <div>
-          <strong>Para ser transparente:</strong> A descoberta achado nunca visto na histórica. Ele fala dos segredos antigos de atrair prosperidade. Ele foi traduzido por nós para o Portugues do Brasil.
+          <strong>Para ser transparente:</strong> A descoberta achado nunca visto na histórica. Ele fala dos segredos
+          antigos de atrair prosperidade. Ele foi traduzido por nós para o Portugues do Brasil.
         </div>
       </div>
     </div>
@@ -227,9 +274,11 @@ Enquanto a Bíblia comum esconde detalhes cruciais sobre como "pedir e trabalhar
         <p>"Uma mina de ouro espiritual, agora decodificada para as suas mãos."</p>
       </div>
 
-      <p>Nós analisamos os detalhes dessa descoberta acadêmica e traduzimos a sabedoria daquele manuscrito em um passo a passo simples. Você não precisa ir ao Vaticano para acessar essa frequência.</p>
+      <p>Nós analisamos os detalhes dessa descoberta acadêmica e traduzimos a sabedoria daquele manuscrito em um passo a
+        passo simples. Você não precisa ir ao Vaticano para acessar essa frequência.</p>
 
-      <p>Apresentamos: O Capítulo Oculto: A Frequência Original. A tradução facilitada para você aplicar a sabedoria exata desse manuscrito milenar na sua vida hoje.</p>
+      <p>Apresentamos: O Capítulo Oculto: A Frequência Original. A tradução facilitada para você aplicar a sabedoria
+        exata desse manuscrito milenar na sua vida hoje.</p>
 
       <p class="emphasis-text">Tudo o que você vai acessar em instantes:</p>
     </div>
@@ -242,25 +291,29 @@ Enquanto a Bíblia comum esconde detalhes cruciais sobre como "pedir e trabalhar
 
       <p>No manuscrito de Kessel, o texto original nunca desapareceu. Ficou coberto, duas vezes.</p>
 
-      <p>Na vida, muita gente passa por algo parecido: faz a sua parte, trabalha, reza, se esforça… e, por cima da promessa de descanso, vão se acumulando camadas:</p>
+      <p>Na vida, muita gente passa por algo parecido: faz a sua parte, trabalha, reza, se esforça… e, por cima da
+        promessa de descanso, vão se acumulando camadas:</p>
 
       <div class="layers-stack">
         <div class="layer-item layer-3">
           <div class="layer-icon"></div>
           <div>
-            <strong>A História da Descoberta:</strong> O dossiê completo de como a ciência revelou o palimpsesto escondido no Vaticano por mais de 15 séculos, detalhando o que foi alterado.
+            <strong>A História da Descoberta:</strong> O dossiê completo de como a ciência revelou o palimpsesto
+            escondido no Vaticano por mais de 15 séculos, detalhando o que foi alterado.
           </div>
         </div>
         <div class="layer-item layer-2">
           <div class="layer-icon"></div>
           <div>
-            <strong>A Oração Original Traduzida</strong> A tradução completa da Oração Oculta Siríca que manifesta prosperidade".
+            <strong>A Oração Original Traduzida</strong> A tradução completa da Oração Oculta Siríca que manifesta
+            prosperidade".
           </div>
         </div>
         <div class="layer-item layer-1">
           <div class="layer-icon"></div>
           <div>
-            <strong>As 7 Chaves de Destrave:</strong> O método prático para usar as palavras desse capítulo para destravar sua mente financeira e encontrar o descanso prometido por Mateus.
+            <strong>As 7 Chaves de Destrave:</strong> O método prático para usar as palavras desse capítulo para
+            destravar sua mente financeira e encontrar o descanso prometido por Mateus.
           </div>
         </div>
       </div>
@@ -278,12 +331,15 @@ Enquanto a Bíblia comum esconde detalhes cruciais sobre como "pedir e trabalhar
           <div class="method-number">1</div>
           <div class="method-content">
             <h3>Áudio Subliminar da Oração Original (Frequência 432Hz)</h3>
-            <p>O segredo não é apenas ler as palavras originais, é entrar na frequência delas. Você receberá um áudio MP3 gravado com uma tecnologia subliminar na frequência de 432Hz (a frequência do universo).
+            <p>O segredo não é apenas ler as palavras originais, é entrar na frequência delas. Você receberá um áudio
+              MP3 gravado com uma tecnologia subliminar na frequência de 432Hz (a frequência do universo).
 
-Ele contém a intenção e a oração baseada na tradução aramaica/siríaca original para você ouvir enquanto dorme. Descanse enquanto sua mente subconsciente é reprogramada para aceitar a verdadeira prosperidade que foi devolvida ao mundo.</p>
-  
+              Ele contém a intenção e a oração baseada na tradução aramaica/siríaca original para você ouvir enquanto
+              dorme. Descanse enquanto sua mente subconsciente é reprogramada para aceitar a verdadeira prosperidade que
+              foi devolvida ao mundo.</p>
+
+          </div>
         </div>
-    </div>
   </section>
 
   <!-- CTA intermediário -->
@@ -299,30 +355,32 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
 
   <!-- ==================== 7. O QUE VOCÊ RECEBE + PREÇO ==================== -->
   <section class="section section-offer" id="oferta">
-  
-      <div class="offer-box">
-        <div class="deliverable-item">
-          <span class="deliverable-icon"></span>
-          <div>
-            <h3>Guia "O conhecimento contido nesses manuscritos não tem preço."</h3>
-            <p>Se fossemos cobrar por um curso de manifestação com base nessas descobertas, o valor seria facilmente de R$ 197,00.</p>
-		  </div>
-			<h3>Mas o seu acesso completo hoje (Guia + Bônus Áudio Subliminar) não custará nem perto disso.</h3>
-          </div>
-        </div>
-		
-      <!-- Preço -->
-      <div class="price-block">
-        <p class="price-label">De R$ 97,00 por apenas</p>
-        <div class="price-value">R$&nbsp;37<span class="price-cents">,99</span></div>
-        <p class="price-info">Pagamento único. Acesso imediato após a confirmação do pagamento.</p>
 
-        <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn cta-btn-large" id="cta-offer">
-          <span class="cta-icon"></span>
-          DESTRAVAR MEU ACESSO AGORA POR R$ 37,99
-        </a>
-        <small class="cta-note">Você será levado ao pagamento seguro da Cakto. No PIX, a confirmação costuma ser em segundos.</small>
+    <div class="offer-box">
+      <div class="deliverable-item">
+        <span class="deliverable-icon"></span>
+        <div>
+          <h3>Guia "O conhecimento contido nesses manuscritos não tem preço."</h3>
+          <p>Se fossemos cobrar por um curso de manifestação com base nessas descobertas, o valor seria facilmente de R$
+            197,00.</p>
+        </div>
+        <h3>Mas o seu acesso completo hoje (Guia + Bônus Áudio Subliminar) não custará nem perto disso.</h3>
       </div>
+    </div>
+
+    <!-- Preço -->
+    <div class="price-block">
+      <p class="price-label">De R$ 97,00 por apenas</p>
+      <div class="price-value">R$&nbsp;37<span class="price-cents">,99</span></div>
+      <p class="price-info">Pagamento único. Acesso imediato após a confirmação do pagamento.</p>
+
+      <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn cta-btn-large" id="cta-offer">
+        <span class="cta-icon"></span>
+        DESTRAVAR MEU ACESSO AGORA POR R$ 37,99
+      </a>
+      <small class="cta-note">Você será levado ao pagamento seguro da Cakto. No PIX, a confirmação costuma ser em
+        segundos.</small>
+    </div>
     </div>
   </section>
 
@@ -361,7 +419,8 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
           <div class="guarantee-days">7 DIAS</div>
         </div>
         <h2>7 Dias de Garantia Incondicional de Paz</h2>
-        <p>Seu risco é absolutamente zero. Acesse "O Capítulo Oculto", leia a descoberta e ouça a frequência original de 432Hz. Se sentir que o guia não é para você, nós devolvemos <strong>100% do valor</strong>, sem perguntas.</p>
+        <p>Seu risco é absolutamente zero. Acesse "O Capítulo Oculto", leia a descoberta e ouça a frequência original de
+          432Hz. Se sentir que o guia não é para você, nós devolvemos <strong>100% do valor</strong>, sem perguntas.</p>
       </div>
     </div>
   </section>
@@ -374,12 +433,15 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
       <div class="faq-list">
         <details class="faq-item">
           <summary>Isso é um "capítulo escondido" que a Igreja ou o Vaticano ocultou?</summary>
-          <p>Não. Mateus 11 e 12 estão em qualquer Bíblia. O que veio à tona foi uma tradução muito antiga desses versículos, que estava coberta por outros textos. Pergaminho era caro, e os copistas reaproveitavam as folhas.</p>
+          <p>Não. Mateus 11 e 12 estão em qualquer Bíblia. O que veio à tona foi uma tradução muito antiga desses
+            versículos, que estava coberta por outros textos. Pergaminho era caro, e os copistas reaproveitavam as
+            folhas.</p>
         </details>
 
         <details class="faq-item">
           <summary>A descoberta prova que vou prosperar financeiramente?</summary>
-          <p>Não. É um achado histórico. O guia é devocional e não promete aumento de renda nem resultado financeiro.</p>
+          <p>Não. É um achado histórico. O guia é devocional e não promete aumento de renda nem resultado financeiro.
+          </p>
         </details>
 
         <details class="faq-item">
@@ -409,12 +471,14 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
 
         <details class="faq-item">
           <summary>Posso conferir as informações sobre a descoberta?</summary>
-          <p>Sim. As fontes estão na seção "O que o pesquisador realmente encontrou": o artigo científico e o comunicado da Academia Austríaca de Ciências.</p>
+          <p>Sim. As fontes estão na seção "O que o pesquisador realmente encontrou": o artigo científico e o comunicado
+            da Academia Austríaca de Ciências.</p>
         </details>
 
         <details class="faq-item">
           <summary>O guia substitui ajuda profissional?</summary>
-          <p>Não. Se você passa por dificuldade financeira, emocional ou de saúde, busque também orientação profissional.</p>
+          <p>Não. Se você passa por dificuldade financeira, emocional ou de saúde, busque também orientação
+            profissional.</p>
         </details>
       </div>
     </div>
@@ -425,14 +489,16 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
     <div class="container container-narrow" style="text-align:center;">
       <h2>A tinta cobriu aquele texto por mais de mil anos. A luz levou um instante.</h2>
 
-      <p class="final-lead">Você pode reler as palavras de Jesus sobre descanso com calma, com um plano simples e em poucos minutos por dia.</p>
+      <p class="final-lead">Você pode reler as palavras de Jesus sobre descanso com calma, com um plano simples e em
+        poucos minutos por dia.</p>
 
       <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn cta-btn-large" id="cta-final-btn">
         <span class="cta-icon"></span>
         SIM, QUERO O CAPÍTULO OCULTO — R$&nbsp;37,99
       </a>
 
-      <p class="ps-text"><strong>P.S.:</strong> Se em 7 dias o guia não fizer sentido para você, devolvemos o seu dinheiro. O risco é todo nosso.</p>
+      <p class="ps-text"><strong>P.S.:</strong> Se em 7 dias o guia não fizer sentido para você, devolvemos o seu
+        dinheiro. O risco é todo nosso.</p>
     </div>
   </section>
 
@@ -448,15 +514,20 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
         </div>
       </div>
       <p class="footer-disclaimer">
-        <strong>Aviso legal:</strong> Material devocional e educativo. Não prometemos ganhos financeiros, cura ou qualquer resultado específico; a experiência varia de pessoa para pessoa. A descoberta citada é de autoria do pesquisador Grigory Kessel e foi divulgada pela Academia Austríaca de Ciências, que não têm relação com este produto nem o endossam. Este site não é afiliado ao Facebook, Instagram ou Meta.
+        <strong>Aviso legal:</strong> Material devocional e educativo. Não prometemos ganhos financeiros, cura ou
+        qualquer resultado específico; a experiência varia de pessoa para pessoa. A descoberta citada é de autoria do
+        pesquisador Grigory Kessel e foi divulgada pela Academia Austríaca de Ciências, que não têm relação com este
+        produto nem o endossam. Este site não é afiliado ao Facebook, Instagram ou Meta.
       </p>
     </div>
   </footer>
 
   <!-- Botão Flutuante do WhatsApp -->
-  <a href="https://wa.me/5511914152947?text=Olá!%20Gostaria%20de%20tirar%20dúvidas%20sobre%20O%20Capítulo%20Oculto%20-%20Frequência%20da%20Prosperidade." target="_blank" class="whatsapp-btn" aria-label="Fale conosco no WhatsApp">
+  <a href="https://wa.me/5511914152947?text=Olá!%20Gostaria%20de%20tirar%20dúvidas%20sobre%20O%20Capítulo%20Oculto%20-%20Frequência%20da%20Prosperidade."
+    target="_blank" class="whatsapp-btn" aria-label="Fale conosco no WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33.6 0-66.7-9-95.6-26.1l-6.9-4.1-71 18.6 18.9-69.2-4.5-7.2c-18.7-29.9-28.7-64.6-28.7-100.2 0-103.9 84.6-188.5 188.6-188.5 50.4 0 97.7 19.6 133.4 55.3s55.2 82.9 55.2 133.4c0 103.9-84.6 188.6-188.6 188.6zM324 286.9c-5.5-2.7-32.5-16.1-37.5-17.9-5-1.8-8.7-2.7-12.4 2.7-3.7 5.5-14.2 17.9-17.4 21.6-3.2 3.7-6.5 4.1-12 1.4-5.5-2.7-23.2-8.5-44.2-27.2-16.3-14.6-27.3-32.6-30.5-38.1-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.5 5.5-6.4 8.3-9.6 2.7-3.2 3.7-5.5 5.5-9.1 1.8-3.7.9-7.1-.5-9.8-1.4-2.7-12.4-29.9-17-40.9-4.5-10.8-9-9.3-12.4-9.5-3.2-.2-6.9-.2-10.5-.2-3.7 0-9.6 1.4-14.6 6.9-5 5.5-19.2 18.8-19.2 45.8s19.7 53.1 22.4 56.7c2.7 3.7 38.7 59.1 93.7 82.8 13.1 5.7 23.3 9.1 31.3 11.6 13.2 4.2 25.1 3.6 34.6 2.2 10.6-1.5 32.5-13.3 37.1-26.1 4.6-12.8 4.6-23.8 3.2-26.1-1.5-2.3-5.5-3.7-11-6.4z"/>
+      <path
+        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33.6 0-66.7-9-95.6-26.1l-6.9-4.1-71 18.6 18.9-69.2-4.5-7.2c-18.7-29.9-28.7-64.6-28.7-100.2 0-103.9 84.6-188.5 188.6-188.5 50.4 0 97.7 19.6 133.4 55.3s55.2 82.9 55.2 133.4c0 103.9-84.6 188.6-188.6 188.6zM324 286.9c-5.5-2.7-32.5-16.1-37.5-17.9-5-1.8-8.7-2.7-12.4 2.7-3.7 5.5-14.2 17.9-17.4 21.6-3.2 3.7-6.5 4.1-12 1.4-5.5-2.7-23.2-8.5-44.2-27.2-16.3-14.6-27.3-32.6-30.5-38.1-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.5 5.5-6.4 8.3-9.6 2.7-3.2 3.7-5.5 5.5-9.1 1.8-3.7.9-7.1-.5-9.8-1.4-2.7-12.4-29.9-17-40.9-4.5-10.8-9-9.3-12.4-9.5-3.2-.2-6.9-.2-10.5-.2-3.7 0-9.6 1.4-14.6 6.9-5 5.5-19.2 18.8-19.2 45.8s19.7 53.1 22.4 56.7c2.7 3.7 38.7 59.1 93.7 82.8 13.1 5.7 23.3 9.1 31.3 11.6 13.2 4.2 25.1 3.6 34.6 2.2 10.6-1.5 32.5-13.3 37.1-26.1 4.6-12.8 4.6-23.8 3.2-26.1-1.5-2.3-5.5-3.7-11-6.4z" />
     </svg>
   </a>
 
@@ -465,10 +536,10 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
       ===================================================== -->
   <!-- Carrega a API do YouTube Iframe -->
   <script src="https://www.youtube.com/iframe_api"></script>
-  
+
   <script>
     var player;
-    
+
     // Função chamada automaticamente pela API do YouTube quando ela está pronta
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('youtube-player', {
@@ -493,7 +564,7 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
 
       // Configura o clique no overlay gigante
       var overlay = document.getElementById('unmute-overlay');
-      overlay.addEventListener('click', function() {
+      overlay.addEventListener('click', function () {
         // Tira do mudo
         player.unMute();
         // Volta para o segundo 0 para a pessoa não perder nada
@@ -508,18 +579,18 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
     }
 
     // Script para exibir os botões de vendas após 2 minutos (120.000 ms)
-    setTimeout(function() {
+    setTimeout(function () {
       var elements = document.querySelectorAll('.hidden-delay');
-      elements.forEach(function(el) {
+      elements.forEach(function (el) {
         el.classList.remove('hidden-delay');
       });
     }, 120000);
   </script>
-	<!-- =====================================================
+  <!-- =====================================================
        SCRIPT DE RASTREIO AVANÇADO (COM MEMÓRIA SESSION)
        ===================================================== -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       const buyLinks = document.querySelectorAll('a[href*="pay.cakto.com.br"]');
       let urlParams = window.location.search;
 
@@ -533,19 +604,19 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
 
       // 2. Repassar os parâmetros para os botões da Cakto
       if (urlParams) {
-        buyLinks.forEach(function(link) {
+        buyLinks.forEach(function (link) {
           if (link.href.indexOf('?') === -1) {
-            link.href += urlParams; 
+            link.href += urlParams;
           } else {
             // Remove o '?' extra se for concatenar
-            link.href += '&' + urlParams.substring(1); 
+            link.href += '&' + urlParams.substring(1);
           }
         });
       }
 
       // 3. Disparo do Evento InitiateCheckout no clique
-      buyLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
+      buyLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
           if (typeof fbq === 'function') {
             fbq('track', 'InitiateCheckout');
           }
@@ -555,4 +626,5 @@ Ele contém a intenção e a oração baseada na tradução aramaica/siríaca or
   </script>
 
 </body>
+
 </html>
