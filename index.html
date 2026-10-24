@@ -3,20 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>O Capítulo Oculto — Prosperidade | Casa de São Bento</title>
+  <title>O Capítulo Oculto — Frequência da Prosperidade | Casa de São Bento</title>
   <meta name="description" content="Cientistas usam luz ultravioleta e revelam o Capítulo Oculto da Bíblia. Descubra o verdadeiro segredo da prosperidade e paz mental censurado há mais de 1.500 anos.">
   <meta name="theme-color" content="#4a0e17">
   
-  <!-- =====================================================
-       FONTES (Cinzel para Títulos / Lora para Texto - Estilo Bíblico/Clássico)
-       ===================================================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@500;700&display=swap" rel="stylesheet">
 
-  <!-- =====================================================
-       META PIXEL
-       ===================================================== -->
+  <!-- META PIXEL -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -33,30 +28,26 @@
     <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1684026826038026&ev=PageView&noscript=1"/>
   </noscript>
 
-  <!-- =====================================================
-       ESTILOS (Design Católico, Elegante e Focado no Público 50+)
-       ===================================================== -->
   <style>
     :root {
-      /* Cores Católicas Clássicas */
-      --burgundy: #4a0e17; /* Vermelho escuro/Vinho */
-      --burgundy-dark: #2a050a;
-      --gold: #c5a059;     /* Dourado elegante, não amarelo berrante */
-      --gold-light: #e8d5a5;
-      --parchment: #fdfbf7; /* Cor de pergaminho/papel antigo para fundo */
-      --text-dark: #2c2825;
-      --text-light: #ffffff;
-      --safe-green: #2e7d32; /* Verde escuro para botões de compra (segurança) */
+      var(--burgundy): #4a0e17;
+      var(--burgundy-dark): #2a050a;
+      var(--gold): #c5a059;
+      var(--gold-light): #e8d5a5;
+      var(--parchment): #fdfbf7;
+      var(--text-dark): #2c2825;
+      var(--text-light): #ffffff;
+      var(--safe-green): #2e7d32;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Lora', serif; /* Fonte serifada para facilitar leitura de textos longos e dar ar de livro */
-      background-color: var(--parchment);
-      color: var(--text-dark);
+      font-family: 'Lora', serif;
+      background-color: #fdfbf7;
+      color: #2c2825;
       line-height: 1.6;
-      font-size: 18px; /* Fonte maior para público 50+ */
+      font-size: 18px;
     }
 
     h1, h2, h3, .kicker, .fact-label, .guarantee-days {
@@ -69,15 +60,14 @@
       margin: 0 auto;
       padding: 0 20px;
     }
-    
     .container-narrow { max-width: 800px; }
 
-    /* --- BOTOES (CTA) --- */
+    /* BOTOES */
     .cta-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      background-color: var(--safe-green); /* Verde transmite segurança */
+      background-color: #2e7d32;
       color: #fff;
       font-family: 'Inter', sans-serif;
       font-weight: 700;
@@ -96,98 +86,52 @@
     .cta-btn:hover { background-color: #1b5e20; transform: translateY(-2px); }
     .cta-btn-large { font-size: 1.2rem; padding: 25px 30px; max-width: 600px; }
     
-    .cta-icon::before {
-      content: '🔒'; /* Ícone de cadeado reforça segurança */
-      margin-right: 10px;
-      font-size: 1.2rem;
-    }
-    
+    .cta-icon::before { content: '🔒'; margin-right: 10px; font-size: 1.2rem; }
     .cta-note {
-      display: block;
-      text-align: center;
-      font-size: 0.85rem;
-      color: #666;
-      font-family: 'Inter', sans-serif;
-      margin-bottom: 30px;
+      display: block; text-align: center; font-size: 0.85rem; color: #666;
+      font-family: 'Inter', sans-serif; margin-bottom: 30px;
     }
+    .hidden-delay { display: none !important; }
 
-    /* Ocultar elementos que usam a classe hidden-delay (só aparecem via JS) */
-    .hidden-delay {
-      display: none !important;
-    }
-
-    /* --- HERO SECTION --- */
+    /* HERO */
     .hero {
-      background: linear-gradient(to bottom, var(--burgundy-dark), var(--burgundy));
-      color: var(--text-light);
+      background: linear-gradient(to bottom, #2a050a, #4a0e17);
+      color: #ffffff;
       padding: 60px 0 40px 0;
       text-align: center;
-      border-bottom: 4px solid var(--gold);
+      border-bottom: 4px solid #c5a059;
     }
     .hero .kicker {
-      color: var(--gold);
-      font-size: 1.1rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 15px;
+      color: #c5a059; font-size: 1.1rem; font-weight: 600;
+      letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px;
     }
-    .hero h1 {
-      font-size: 2.2rem;
-      line-height: 1.3;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
-    .hero .highlight { color: var(--gold); }
+    .hero h1 { font-size: 2.2rem; line-height: 1.3; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+    .hero .highlight { color: #c5a059; }
     .hero .lead {
-      font-size: 1.2rem;
-      color: var(--gold-light);
-      max-width: 700px;
-      margin: 0 auto 40px auto;
-      font-style: italic;
+      font-size: 1.2rem; color: #e8d5a5; max-width: 700px;
+      margin: 0 auto 40px auto; font-style: italic;
     }
 
-    /* --- VIDEO VSL --- */
+    /* VIDEO */
     .video-container {
-      position: relative;
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-      border-radius: 8px;
-      overflow: hidden;
-      aspect-ratio: 16/9;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-      border: 3px solid var(--gold);
+      position: relative; width: 100%; max-width: 800px; margin: 0 auto;
+      border-radius: 8px; overflow: hidden; aspect-ratio: 16/9;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6); border: 3px solid #c5a059;
     }
-    #youtube-player {
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      pointer-events: none;
-    }
+    #youtube-player { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
     #unmute-overlay {
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(42, 5, 10, 0.85); /* Fundo vinho escuro transparente */
-      display: flex; flex-direction: column;
-      justify-content: center; align-items: center;
-      z-index: 10; cursor: pointer;
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(42, 5, 10, 0.85); display: flex; flex-direction: column;
+      justify-content: center; align-items: center; z-index: 10; cursor: pointer;
     }
     .unmute-btn {
-      background-color: var(--gold);
-      color: var(--burgundy-dark);
-      font-family: 'Cinzel', serif;
-      font-weight: 800; font-size: 1.3rem;
-      padding: 15px 40px; border-radius: 5px;
-      border: 2px solid #fff;
-      display: flex; align-items: center; gap: 15px;
-      animation: pulse 2s infinite;
-      box-shadow: 0 0 20px rgba(197, 160, 89, 0.6);
+      background-color: #c5a059; color: #2a050a; font-family: 'Cinzel', serif;
+      font-weight: 800; font-size: 1.3rem; padding: 15px 40px; border-radius: 5px;
+      border: 2px solid #fff; display: flex; align-items: center; gap: 15px;
+      animation: pulse 2s infinite; box-shadow: 0 0 20px rgba(197, 160, 89, 0.6);
     }
-    .unmute-btn svg { width: 28px; height: 28px; fill: var(--burgundy-dark); }
-    .overlay-text {
-      color: #fff; margin-top: 20px;
-      font-family: 'Lora', serif; font-size: 1.1rem; font-style: italic;
-    }
+    .unmute-btn svg { width: 28px; height: 28px; fill: #2a050a; }
+    .overlay-text { color: #fff; margin-top: 20px; font-family: 'Lora', serif; font-size: 1.1rem; font-style: italic; }
 
     @keyframes pulse {
       0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.7); }
@@ -195,244 +139,101 @@
       100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(197, 160, 89, 0); }
     }
 
-    /* --- SEÇÕES GERAIS --- */
     .section { padding: 70px 0; }
-    .section h2 {
-      font-size: 2rem;
-      color: var(--burgundy);
-      margin-bottom: 25px;
-      text-align: center;
-    }
+    .section h2 { font-size: 2rem; color: #4a0e17; margin-bottom: 25px; text-align: center; line-height: 1.3; }
     .text-center { text-align: center; }
 
-    /* --- FATOS VERIFICÁVEIS --- */
-    .facts-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
+    /* PROBLEM & MECHANISM COMBINED */
+    .problem-box {
+      background: #fff; padding: 40px; border-radius: 12px;
+      border-top: 4px solid #c5a059; box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
     }
-    .fact-card {
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      border-top: 4px solid var(--gold);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    .problem-box h3 { color: #4a0e17; font-size: 1.5rem; margin-bottom: 15px; font-family: 'Cinzel', serif; }
+    
+    .mechanism-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px;
     }
-    .fact-card-wide { grid-column: 1 / -1; }
-    .fact-label {
-      color: var(--burgundy);
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 15px;
-      letter-spacing: 1px;
-      border-bottom: 1px solid var(--gold-light);
-      padding-bottom: 5px;
+    @media(max-width: 768px) { .mechanism-grid { grid-template-columns: 1fr; } }
+    
+    .mech-card {
+      background: #4a0e17; color: #fff; padding: 30px; border-radius: 8px;
+      border: 1px solid #c5a059;
     }
-    .sources-box {
-      margin-top: 40px; padding: 20px;
-      background-color: #f4efdf; border-left: 4px solid var(--gold);
-      font-size: 0.9rem; color: #555;
-    }
+    .mech-card h4 { color: #c5a059; font-family: 'Cinzel', serif; font-size: 1.2rem; margin-bottom: 15px; }
 
-    /* --- MECANISMO ÚNICO (FREQUÊNCIA 432HZ) --- */
-    .section-mechanism {
-      background-color: #fff;
-      padding: 60px 0;
-      border-top: 1px solid #eaeaea;
+    /* TRANSFORMATION (THE 7 DAYS) */
+    .section-transform {
+      background-color: #f4efdf; border-top: 1px solid #e8d5a5; border-bottom: 1px solid #e8d5a5;
     }
-    .mechanism-content {
-      background: var(--parchment);
-      padding: 40px;
-      border-radius: 12px;
-      border-left: 6px solid var(--gold);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    .timeline {
+      max-width: 600px; margin: 0 auto; padding: 20px 0;
     }
-    .mechanism-content h2 {
-      text-align: left;
-      font-size: 1.8rem;
-      margin-bottom: 20px;
+    .timeline-item {
+      background: #fff; padding: 25px; border-radius: 8px; margin-bottom: 20px;
+      border-left: 5px solid #2e7d32; box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
-    .mechanism-list {
-      margin-top: 25px;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      border: 1px solid var(--gold-light);
-    }
-    .mechanism-list h4 {
-      color: var(--burgundy);
-      font-family: 'Cinzel', serif;
-      font-size: 1.2rem;
-      margin-bottom: 15px;
-    }
-    .mechanism-list ul {
-      list-style: none;
-    }
-    .mechanism-list li {
-      margin-bottom: 15px;
-      padding-left: 30px;
-      position: relative;
-    }
-    .mechanism-list li::before {
-      content: '✔';
-      position: absolute; left: 0; top: 0;
-      color: var(--safe-green); font-weight: bold;
-    }
+    .timeline-item strong { color: #4a0e17; font-family: 'Cinzel', serif; font-size: 1.2rem; display: block; margin-bottom: 5px; }
 
-    /* --- CAMADAS (ESCURA) --- */
-    .section-layers {
-      background-color: var(--burgundy);
-      color: #fff;
-      border-top: 2px solid var(--gold);
-      border-bottom: 2px solid var(--gold);
-    }
-    .section-layers h2 { color: var(--gold); }
-    .layers-stack { margin-top: 40px; display: flex; flex-direction: column; gap: 20px; }
-    .layer-item {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(197, 160, 89, 0.3);
-      padding: 25px; border-radius: 8px;
-    }
-    .layer-item strong { color: var(--gold); font-family: 'Cinzel', serif; font-size: 1.2rem; display: block; margin-bottom: 5px; }
-
-    /* --- TANGIBILIDADE / MOCKUP --- */
+    /* TANGIBILITY / MOCKUP */
     .mockup-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      align-items: center;
-      margin: 50px 0;
-      background: #fff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      border: 1px solid var(--gold-light);
+      display: flex; flex-wrap: wrap; gap: 40px; align-items: center; margin: 50px 0;
+      background: #fff; padding: 40px; border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #e8d5a5;
     }
-    .mockup-image-container {
-      flex: 1;
-      min-width: 300px;
-      text-align: center;
-    }
-    .mockup-placeholder {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-      border: 3px solid var(--parchment);
-    }
-    .mockup-details {
-      flex: 1;
-      min-width: 300px;
-    }
-    .mockup-details h3 {
-      font-size: 1.5rem;
-      color: var(--burgundy);
-      margin-bottom: 20px;
-    }
+    .mockup-image-container { flex: 1; min-width: 300px; text-align: center; }
+    .mockup-placeholder { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); border: 3px solid #fdfbf7; }
+    .mockup-details { flex: 1; min-width: 300px; }
+    .mockup-details h3 { font-size: 1.5rem; color: #4a0e17; margin-bottom: 20px; }
     .mockup-list { list-style: none; }
-    .mockup-list li {
-      margin-bottom: 15px;
-      padding-left: 30px;
-      position: relative;
-      font-size: 1.1rem;
-    }
-    .mockup-list li::before {
-      content: '✓';
-      position: absolute; left: 0; top: 0;
-      color: var(--gold); font-weight: bold; font-size: 1.2rem;
-    }
+    .mockup-list li { margin-bottom: 15px; padding-left: 30px; position: relative; font-size: 1.1rem; }
+    .mockup-list li::before { content: '✓'; position: absolute; left: 0; top: 0; color: #c5a059; font-weight: bold; font-size: 1.2rem; }
 
-    /* --- OFERTA E PREÇO --- */
+    /* OFFER & PRICE */
     .price-block {
-      text-align: center;
-      background: #fff;
-      padding: 40px;
-      border-radius: 12px;
-      border: 2px dashed var(--gold);
-      margin-top: 20px;
+      text-align: center; background: #fff; padding: 40px; border-radius: 12px;
+      border: 2px dashed #c5a059; margin-top: 20px;
     }
     .price-label { color: #666; font-size: 1.1rem; text-decoration: line-through; }
-    .price-value {
-      font-size: 4rem;
-      font-family: 'Cinzel', serif;
-      font-weight: 700;
-      color: var(--burgundy);
-      line-height: 1;
-      margin: 10px 0;
-    }
+    .price-value { font-size: 4rem; font-family: 'Cinzel', serif; font-weight: 700; color: #4a0e17; line-height: 1; margin: 10px 0; }
     .price-cents { font-size: 2rem; vertical-align: top; }
     .price-info { color: #444; font-size: 1.1rem; font-weight: 500; margin-bottom: 30px; }
 
-    /* --- GARANTIA --- */
-    .section-guarantee {
-      background-color: var(--burgundy-dark);
-      color: #fff;
-      text-align: center;
-    }
-    .section-guarantee h2 { color: var(--gold); }
+    /* GUARANTEE */
+    .section-guarantee { background-color: #2a050a; color: #fff; text-align: center; }
+    .section-guarantee h2 { color: #c5a059; }
     .guarantee-card {
-      max-width: 600px;
-      margin: 0 auto;
-      border: 2px solid var(--gold);
-      padding: 40px;
-      border-radius: 10px;
-      background: url('data:image/svg+xml;utf8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="%23c5a059" fill-opacity="0.1"/></svg>');
+      max-width: 600px; margin: 0 auto; border: 2px solid #c5a059; padding: 40px;
+      border-radius: 10px; background: rgba(197, 160, 89, 0.05);
     }
-    .guarantee-badge {
-      font-size: 3rem;
-      color: var(--gold);
-      margin-bottom: 20px;
-    }
+    .guarantee-badge { font-size: 3rem; margin-bottom: 20px; }
 
-    /* --- FAQ --- */
-    .faq-item {
-      background: #fff;
-      border-radius: 6px;
-      margin-bottom: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      border-left: 4px solid var(--burgundy);
-    }
-    .faq-item summary {
-      padding: 20px;
-      font-family: 'Cinzel', serif;
-      font-weight: 600;
-      font-size: 1.1rem;
-      cursor: pointer;
-      color: var(--burgundy);
-      outline: none;
-    }
+    /* FAQ */
+    .faq-item { background: #fff; border-radius: 6px; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-left: 4px solid #4a0e17; }
+    .faq-item summary { padding: 20px; font-family: 'Cinzel', serif; font-weight: 600; font-size: 1.1rem; cursor: pointer; color: #4a0e17; outline: none; }
     .faq-item p { padding: 0 20px 20px 20px; color: #555; }
 
-    /* --- WHATSAPP FIXO --- */
+    /* WHATSAPP */
     .whatsapp-btn {
-      position: fixed; bottom: 20px; right: 20px;
-      background-color: #25d366; color: white;
-      border-radius: 50%; width: 65px; height: 65px;
-      display: flex; justify-content: center; align-items: center;
-      box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
-      z-index: 1000; transition: transform 0.3s ease;
+      position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white;
+      border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;
+      box-shadow: 2px 2px 15px rgba(0,0,0,0.3); z-index: 1000; transition: transform 0.3s ease;
     }
     .whatsapp-btn:hover { transform: scale(1.1); }
     .whatsapp-btn svg { width: 35px; height: 35px; fill: white; }
 
-    /* --- RODAPÉ --- */
-    footer {
-      background: #111; color: #888;
-      padding: 40px 0; text-align: center;
-      font-family: 'Inter', sans-serif; font-size: 0.9rem;
-    }
-    .footer-links a { color: var(--gold); text-decoration: none; margin: 0 10px; }
+    footer { background: #111; color: #888; padding: 40px 0; text-align: center; font-family: 'Inter', sans-serif; font-size: 0.9rem; }
+    .footer-links a { color: #c5a059; text-decoration: none; margin: 0 10px; }
   </style>
 </head>
 <body>
 
-  <!-- ==================== 1. HERO (VÍDEO) ==================== -->
+  <!-- HERO -->
   <section class="hero" id="hero">
     <div class="container">
-      <div class="kicker">A Descoberta científica que Abalou o Vaticano</div>
-      <h1>Cientistas usam luz ultravioleta e revelam o <span class="highlight">"Capítulo Oculto"</span> da Bíblia capaz de destravar sua vida financeira em 7 dias.</h1>
-      <p class="lead">Apagado por mãos humanas há mais de 1.500 anos, este texto sagrado acaba de ser recuperado.</p>
+      <div class="kicker">A Descoberta que a Ciência Ocultou</div>
+      <h1>Cientistas usam luz ultravioleta e revelam a <span class="highlight">"Frequência Oculta"</span> capaz de destravar sua vida financeira em 7 dias.</h1>
+      <p class="lead">O segredo não era apenas o que estava escrito. Mas a frequência exata em que as palavras vibravam.</p>
 
       <div class="video-container">
         <div id="youtube-player"></div>
@@ -441,13 +242,13 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
               <path d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"/>
             </svg>
-            CLIQUE AQUI PARA OUVIR O SOM
+            CLIQUE AQUI PARA OUVIR
           </div>
           <div class="overlay-text">Seu vídeo já começou...</div>
         </div>
       </div>
 
-      <!-- BOTÃO INICIAL COM DELAY DE 3 MINUTOS (180.000 ms) -->
+      <!-- DELAY DE 3 MINUTOS (180.000 ms) -->
       <div id="hero-btn-container" class="hidden-delay" style="text-align:center; margin-top: 40px;">
         <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn" id="cta-hero">
           <span class="cta-icon"></span>
@@ -458,118 +259,84 @@
     </div>
   </section>
 
-  <!-- ==================== 2. FATOS VERIFICÁVEIS ==================== -->
-  <section class="section section-facts" id="fatos">
-    <div class="container">
-      <h2>Você já sentiu que ora, ora... e nada na sua vida sai do lugar?</h2>
-      <p class="text-center" style="font-size:1.2rem; max-width:800px; margin:0 auto;">A culpa pode não ser da sua fé. O bloqueio que você sente na sua vida financeira e espiritual tem uma explicação histórica que o mundo só descobriu agora.</p>
-
-      <div class="facts-grid">
-        <div class="fact-card">
-          <div class="fact-label">QUEM</div>
-          <p>Em 2023, o pesquisador Grigory Kessel, trabalhando para a Academia Austríaca de Ciências, fez algo impensável. Com equipamentos avançados de luz ultravioleta, ele olhou para as páginas de um antigo manuscrito na Biblioteca do Vaticano e viu algo brilhando no fundo.</p>
-        </div>
-        <div class="fact-card">
-          <div class="fact-label">O QUE ENCONTRARAM</div>
-          <p>Eram palavras. Uma tradução em aramaico/siríaco antigo do Evangelho de Mateus. O impressionante? Esse texto foi apagado e raspado duas vezes pelos monges na Idade Média.</p>
-        </div>
-        <div class="fact-card">
-          <div class="fact-label">COMO</div>
-          <p>Fotografia com luz ultravioleta, que faz a tinta apagada voltar a aparecer.</p>
-        </div>
-        <div class="fact-card">
-          <div class="fact-label">PORQUE TENTARAM APAGAR?</div>
-          <p>Se você se sente cansado, trabalha e não prospera, e acha que suas orações não são ouvidas, preste muita atenção. A versão que lemos hoje na Bíblia moderna perdeu a "chave" da ação. O texto siríaco iluminado pela luz UV revelou as ações exatas que os primeiros cristãos usavam para atrair prosperidade e descanso.</p>
-        </div>
-        <div class="fact-card fact-card-wide">
-          <div class="fact-label">A SURPRESA</div>
-          <p>É um "manuscrito inteiro". Há cerca de 1.300 anos o texto foi raspado para reaproveitar o pergaminho, que era caro. Escreveram outro texto por cima; mais tarde, esse também foi apagado e deu lugar a um terceiro. Resultado: <strong>três camadas de escrita</strong>, com o Evangelho na mais profunda.</p>
-        </div>
-      </div>
-
-      <div class="sources-box">
-        <p><strong>Fontes Oficiais:</strong> Artigo de Grigory Kessel na revista <em>New Testament Studies</em> (2023, acesso aberto) e comunicado oficial da <em>Academia Austríaca de Ciências</em>.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== 3. MECANISMO ÚNICO (FREQUÊNCIA E CIÊNCIA) ==================== -->
-  <section class="section section-mechanism" id="mecanismo">
+  <!-- O PROBLEMA E O MECANISMO ÚNICO -->
+  <section class="section" id="mecanismo">
     <div class="container container-narrow">
-      <div class="mechanism-content">
-        <h2>A Ciência por trás do Destrave: Por que o seu dinheiro está travado?</h2>
-        <p>Não é falta de esforço. Não é falta de fé. <strong>É a frequência errada.</strong></p>
-        <p>A ciência moderna comprovou que o estresse financeiro, as dívidas e a ansiedade fazem o nosso cérebro operar em ondas Beta Altas (frequência do caos). Quando você está nessa frequência, você não enxerga oportunidades, toma decisões ruins e repele a prosperidade. É como tentar sintonizar uma rádio de música clássica na estação de rock pesado.</p>
-        <p style="margin-top: 15px;">A grande descoberta de Kessel não revelou apenas as palavras originais de Mateus, mas a exata <em>frequência vibracional</em> dessas palavras em aramaico.</p>
-        
-        <div class="mechanism-list">
-          <h4>A Transformação Prática em 7 Dias</h4>
-          <p style="margin-bottom: 15px; font-size: 0.95rem;">Ao unir as palavras resgatadas do Capítulo Oculto com o Áudio Subliminar em 432Hz (Frequência Universal), você vai:</p>
-          <ul>
-            <li><strong>Dia 1 ao 3 (Limpeza):</strong> Desativar a ansiedade financeira que bloqueia a sua visão de oportunidades.</li>
-            <li><strong>Dia 4 ao 5 (Sintonia):</strong> Reprogramar o seu subconsciente para aceitar a prosperidade como o seu estado natural, sem culpa.</li>
-            <li><strong>Dia 6 ao 7 (Manifestação):</strong> Começar a enxergar portas abertas, clientes novos ou resoluções financeiras que estavam escondidas pela névoa do estresse.</li>
-          </ul>
+      
+      <div class="problem-box">
+        <h3>Você já sentiu que trabalha sem parar, ora com fé, mas o dinheiro escorrega pelas mãos?</h3>
+        <p>Deixe-me dizer uma verdade libertadora: <strong>A culpa não é sua. Nem da sua fé.</strong></p>
+        <p style="margin-top: 15px;">Estudos recentes em neurociência provam que o estresse de não saber como pagar as contas amanhã, o medo e a ansiedade forçam o seu cérebro a operar em <strong>Ondas Beta Altas</strong>. Essa é a frequência do caos e da escassez.</p>
+        <p style="margin-top: 15px;">Enquanto a sua mente vibrar nessa frequência, você não consegue enxergar oportunidades, toma decisões ruins com o dinheiro e, sem perceber, repele a prosperidade. É como tentar ouvir uma rádio de paz sintonizado em uma estação de ruído.</p>
+      </div>
+
+      <h2 style="margin-top: 50px;">A Descoberta no Vaticano: Mais do que Palavras, uma Frequência.</h2>
+      <p class="text-center">Em 2023, o cientista Grigory Kessel usou luz ultravioleta e encontrou um manuscrito apagado há 1.500 anos no Vaticano. Eram as palavras originais de Mateus, em siríaco antigo.</p>
+
+      <div class="mechanism-grid">
+        <div class="mech-card">
+          <h4>Por que tentaram apagar?</h4>
+          <p>Porque aquela versão original não era apenas um texto religioso. Era uma instrução vibracional. Ela guardava o segredo prático que os primeiros cristãos usavam para atrair prosperidade e descanso mental. Um segredo ocultado para manter o povo sob controle e medo.</p>
+        </div>
+        <div class="mech-card">
+          <h4>A Frequência do Destrave</h4>
+          <p>A grande revelação não está apenas em ler, mas em <em>vibrar</em> na sintonia daquelas palavras. Nós isolamos a intenção desse manuscrito e gravamos em um áudio na exata <strong>Frequência de 432Hz</strong> (a Frequência do Universo). Ela desliga as ondas de escassez do seu cérebro.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== 4. CAMADAS (ESCURA) ==================== -->
-  <section class="section section-layers" id="camadas">
+  <!-- A TRANSFORMAÇÃO (7 DIAS) -->
+  <section class="section section-transform" id="transformacao">
     <div class="container container-narrow">
-      <h2>Quando a promessa fica por baixo de camadas</h2>
-      <p>No manuscrito de Kessel, o texto original nunca desapareceu. Ficou coberto, duas vezes. Na vida, muita gente passa por algo parecido: faz a sua parte, trabalha, reza, se esforça… e, por cima da promessa de descanso, vão se acumulando camadas de estresse e dívidas.</p>
+      <h2>O Que Acontece na Prática com a Sua Mente?</h2>
+      <p class="text-center" style="margin-bottom: 40px;">Tudo o que você precisa fazer é dedicar 15 minutos do seu dia. Você vai ler o guia revelado e ouvir o Áudio Subliminar antes de dormir.</p>
 
-      <div class="layers-stack">
-        <div class="layer-item">
-          <strong>A História da Descoberta</strong> 
-          O dossiê completo de como a ciência revelou o palimpsesto escondido no Vaticano por mais de 15 séculos, detalhando o que foi alterado.
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>Dia 1 ao 3: O Reset e a Limpeza</strong>
+          O áudio de 432Hz começa a 'desligar' a sua ansiedade financeira. Ele limpa a Frequência da Escassez (Ondas Beta) da sua mente. O peso das dívidas para de paralisar as suas decisões e você sente uma paz profunda imediata.
         </div>
-        <div class="layer-item">
-          <strong>A Oração Original Traduzida</strong> 
-          A tradução completa da Oração Oculta Siríaca que manifesta prosperidade.
+        <div class="timeline-item">
+          <strong>Dia 4 ao 5: A Reprogramação</strong>
+          Seu subconsciente começa a aceitar a abundância como algo natural, sem culpa. Você para de repelir o dinheiro. Ideias claras sobre como resolver problemas financeiros começam a surgir de forma natural.
         </div>
-        <div class="layer-item">
-          <strong>As 7 Chaves de Destrave</strong> 
-          O método prático para usar as palavras desse capítulo para destravar sua mente financeira e encontrar o descanso prometido por Mateus.
+        <div class="timeline-item">
+          <strong>Dia 6 ao 7: O Destrave Financeiro</strong>
+          Você começa a enxergar portas abertas. Clientes que haviam sumido voltam a procurar seu serviço. Soluções para dívidas que pareciam impossíveis se apresentam. Você prepara a sua mente para que a prosperidade venha até você.
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== 5. TANGIBILIDADE E OFERTA ==================== -->
+  <!-- OFERTA E TANGIBILIDADE -->
   <section class="section section-offer" id="oferta">
     <div class="container container-narrow">
       
-      <h2 style="margin-bottom: 10px;">Tudo o que você vai receber hoje:</h2>
-      <p class="text-center">Apresentamos: O Capítulo Oculto - A Frequência Original.</p>
+      <h2>Tudo o que você vai receber hoje:</h2>
 
-      <!-- ÁREA DO MOCKUP -->
+      <!-- MOCKUP -->
       <div class="mockup-section">
         <div class="mockup-image-container">
-          <!-- IMAGEM ILUSTRATIVA DE UM LIVRO ANTIGO (Substitua pela sua imagem 3D) -->
+          <!-- IMAGEM DO PRODUTO AQUI -->
           <img src="https://images.unsplash.com/photo-1601296200639-89349ce78248?auto=format&fit=crop&w=600&q=80" alt="O Capítulo Oculto" class="mockup-placeholder">
         </div>
         <div class="mockup-details">
-          <h3>O Método da Luz</h3>
+          <h3>O Capítulo Oculto: A Frequência Original</h3>
           <ul class="mockup-list">
-            <li><strong>Guia Completo (PDF):</strong> Leitura facilitada com a história, a tradução e as 7 Chaves do Destrave.</li>
-            <li><strong>O Rito Prático de 7 Dias:</strong> Passo a passo devocional simples de 15 minutos por dia.</li>
-            <li><strong style="color:var(--burgundy);">BÔNUS GRATUITO:</strong> Áudio Subliminar da Oração Original.</li>
+            <li><strong>O Guia Completo (E-book PDF):</strong> A história da descoberta, a tradução do manuscrito e as Chaves Práticas do Destrave.</li>
+            <li><strong>O Rito de 7 Dias:</strong> Um passo a passo devocional simples, direto ao ponto, para ler em poucos minutos.</li>
+            <li><strong style="color:var(--burgundy);">BÔNUS DE DESTRAVE:</strong> Áudio Subliminar 432Hz da Oração Original, para ouvir antes de dormir e reprogramar sua mente.</li>
           </ul>
-          <p style="margin-top:20px; font-size:0.95rem; color:#666;">
-            <em>O áudio MP3 é gravado na frequência de 432Hz. Ele contém a intenção e a oração baseada na tradução siríaca original para você ouvir enquanto dorme.</em>
-          </p>
         </div>
       </div>
 
-      <!-- PREÇO E BOTÃO -->
+      <!-- PREÇO -->
       <div class="price-block">
-        <h3 style="font-family: 'Cinzel', serif; color: var(--burgundy); margin-bottom:15px; font-size:1.5rem;">O conhecimento destes manuscritos não tem preço.</h3>
-        <p style="margin-bottom: 20px;">Se fôssemos cobrar por um curso com base nessas descobertas, o valor seria facilmente de <strong>R$ 97,00</strong>.</p>
+        <h3 style="font-family: 'Cinzel', serif; color: var(--burgundy); margin-bottom:15px; font-size:1.5rem;">O conhecimento desta frequência não tem preço.</h3>
+        <p style="margin-bottom: 20px;">Se fôssemos cobrar o valor real por esse destrave mental e financeiro, <strong>R$ 97,00</strong> seria muito barato.</p>
         
-        <p class="price-label">De R$ 97,00 por apenas</p>
+        <p class="price-label">Mas hoje, de R$ 97,00 por apenas</p>
         <div class="price-value">R$&nbsp;37<span class="price-cents">,99</span></div>
         <p class="price-info">Pagamento único. Acesso imediato no seu e-mail.</p>
 
@@ -577,53 +344,52 @@
           <span class="cta-icon"></span>
           SIM, QUERO ACESSAR O MATERIAL SEGURO AGORA
         </a>
-        <small class="cta-note">Você será levado ao ambiente blindado da Cakto. No PIX, a liberação é imediata.</small>
+        <small class="cta-note">Sem mensalidades. Sem taxas ocultas. Pagamento seguro pela Cakto.</small>
       </div>
-
     </div>
   </section>
 
-  <!-- ==================== 6. GARANTIA ==================== -->
+  <!-- GARANTIA -->
   <section class="section section-guarantee" id="garantia">
     <div class="container">
       <div class="guarantee-card">
         <div class="guarantee-badge">🛡️</div>
         <h2>7 Dias de Garantia Incondicional de Paz</h2>
-        <p style="margin-top: 15px; font-size:1.1rem;">Seu risco é absolutamente zero. Acesse "O Capítulo Oculto", leia a descoberta e ouça a frequência original de 432Hz. Se sentir que o guia não trouxe a paz e a clareza que você buscava, nós devolvemos <strong>100% do seu valor</strong>, sem letras miúdas.</p>
+        <p style="margin-top: 15px; font-size:1.1rem;">Seu risco é absolutamente zero. Acesse o material hoje, ouça o áudio esta noite. Se você não sentir uma paz profunda e não notar a sua visão financeira clarear nos próximos 7 dias, nós devolvemos cada centavo do seu dinheiro. Sem perguntas.</p>
       </div>
     </div>
   </section>
 
-  <!-- ==================== 7. PERGUNTAS FREQUENTES ==================== -->
+  <!-- FAQ OTIMIZADO -->
   <section class="section section-faq" id="faq">
     <div class="container container-narrow">
       <h2>Perguntas frequentes</h2>
 
       <div class="faq-list">
         <details class="faq-item">
-          <summary>Isso é um "capítulo escondido" que a Igreja ou o Vaticano ocultou?</summary>
-          <p>Não. Mateus 11 e 12 estão em qualquer Bíblia. O que veio à tona foi uma tradução muito antiga desses versículos, que estava coberta por outros textos. Pergaminho era caro, e os copistas reaproveitavam as folhas.</p>
+          <summary>Isso é algum tipo de promessa de dinheiro fácil?</summary>
+          <p>Não. Não prometemos que você vai ganhar na loteria ou ficar rico da noite para o dia. Este é um método de <em>destrave mental e espiritual</em> baseado em frequências sonoras e textos milenares para tirar sua mente do estado de escassez, permitindo que você tome melhores decisões financeiras e atraia boas oportunidades.</p>
         </details>
 
         <details class="faq-item">
-          <summary>A descoberta prova que vou prosperar financeiramente?</summary>
-          <p>Não. É um achado histórico. O guia é devocional e não promete aumento de renda imediata, mas sim uma reprogramação através da frequência certa.</p>
+          <summary>Como eu uso o material no dia a dia?</summary>
+          <p>É muito simples. Você lerá o Guia em PDF (que leva menos de 15 minutos) para entender as chaves do manuscrito. Durante a noite, ao deitar, você colocará o Áudio de 432Hz para tocar. Você pode até adormecer ouvindo.</p>
         </details>
 
         <details class="faq-item">
-          <summary>Preciso ser católico?</summary>
-          <p>O guia tem abordagem católica e respeita a Tradição, mas qualquer pessoa que queira ler e rezar com Mateus 11 e 12 pode usar.</p>
+          <summary>Como eu recebo meu acesso?</summary>
+          <p>Assim que o seu pagamento for aprovado (no PIX leva menos de 1 minuto), o sistema envia automaticamente para o seu e-mail o link para baixar o E-book PDF e o Bônus em Áudio MP3.</p>
         </details>
 
         <details class="faq-item">
-          <summary>Como eu recebo o material?</summary>
-          <p>Você recebe o E-book (Guia PDF) e o Bônus (Áudio MP3) diretamente no seu e-mail, logo após a confirmação do pagamento.</p>
+          <summary>O site é seguro?</summary>
+          <p>Totalmente. O pagamento é processado pela Cakto, uma das maiores e mais seguras plataformas de pagamentos do Brasil. Seus dados estão blindados e protegidos.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- ==================== 8. RODAPÉ LEGAL ==================== -->
+  <!-- RODAPÉ -->
   <footer id="footer">
     <div class="container">
       <div class="footer-legal">
@@ -633,21 +399,19 @@
         </div>
       </div>
       <p class="footer-disclaimer" style="font-size: 0.8rem; max-width: 800px; margin: 0 auto; line-height: 1.5;">
-        <strong>Aviso legal:</strong> Material devocional e educativo. Não prometemos ganhos financeiros, cura ou qualquer resultado específico; a experiência varia de pessoa para pessoa. A descoberta citada é de autoria do pesquisador Grigory Kessel e foi divulgada pela Academia Austríaca de Ciências, que não têm relação com este produto nem o endossam. Este site não é afiliado ao Facebook, Instagram ou Meta.
+        <strong>Aviso legal:</strong> Material devocional e educativo focado em desenvolvimento pessoal e espiritual. Não prometemos ganhos financeiros exatos, as experiências variam de indivíduo para indivíduo. A descoberta de Kessel foi divulgada pela Academia Austríaca de Ciências, que não endossa este produto. Este site não é afiliado ao Facebook, Instagram ou Meta.
       </p>
     </div>
   </footer>
 
-  <!-- ==================== WHATSAPP ==================== -->
+  <!-- WHATSAPP -->
   <a href="https://wa.me/5511914152947?text=Olá!%20Gostaria%20de%20tirar%20dúvidas%20sobre%20O%20Capítulo%20Oculto%20-%20Frequência%20da%20Prosperidade." target="_blank" class="whatsapp-btn" aria-label="Fale conosco no WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
       <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33.6 0-66.7-9-95.6-26.1l-6.9-4.1-71 18.6 18.9-69.2-4.5-7.2c-18.7-29.9-28.7-64.6-28.7-100.2 0-103.9 84.6-188.5 188.6-188.5 50.4 0 97.7 19.6 133.4 55.3s55.2 82.9 55.2 133.4c0 103.9-84.6 188.6-188.6 188.6zM324 286.9c-5.5-2.7-32.5-16.1-37.5-17.9-5-1.8-8.7-2.7-12.4 2.7-3.7 5.5-14.2 17.9-17.4 21.6-3.2 3.7-6.5 4.1-12 1.4-5.5-2.7-23.2-8.5-44.2-27.2-16.3-14.6-27.3-32.6-30.5-38.1-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.5 5.5-6.4 8.3-9.6 2.7-3.2 3.7-5.5 5.5-9.1 1.8-3.7.9-7.1-.5-9.8-1.4-2.7-12.4-29.9-17-40.9-4.5-10.8-9-9.3-12.4-9.5-3.2-.2-6.9-.2-10.5-.2-3.7 0-9.6 1.4-14.6 6.9-5 5.5-19.2 18.8-19.2 45.8s19.7 53.1 22.4 56.7c2.7 3.7 38.7 59.1 93.7 82.8 13.1 5.7 23.3 9.1 31.3 11.6 13.2 4.2 25.1 3.6 34.6 2.2 10.6-1.5 32.5-13.3 37.1-26.1 4.6-12.8 4.6-23.8 3.2-26.1-1.5-2.3-5.5-3.7-11-6.4z"/>
     </svg>
   </a>
 
-  <!-- =====================================================
-       SCRIPTS YOUTUBE, DELAY E TRACKING AVANÇADO
-       ===================================================== -->
+  <!-- SCRIPTS YOUTUBE, DELAY E TRACKING AVANÇADO -->
   <script src="https://www.youtube.com/iframe_api"></script>
   <script>
     var player;
@@ -671,7 +435,7 @@
       });
     }
 
-    // SCRIPT DE DELAY DE 3 MINUTOS (180.000 ms) PARA O BOTÃO DO VÍDEO
+    // DELAY DE 3 MINUTOS
     setTimeout(function() {
       var elements = document.querySelectorAll('.hidden-delay');
       elements.forEach(function(el) {
