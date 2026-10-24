@@ -111,6 +111,11 @@
       margin-bottom: 30px;
     }
 
+    /* Ocultar elementos que usam a classe hidden-delay (só aparecem via JS) */
+    .hidden-delay {
+      display: none !important;
+    }
+
     /* --- HERO SECTION --- */
     .hero {
       background: linear-gradient(to bottom, var(--burgundy-dark), var(--burgundy));
@@ -230,7 +235,52 @@
       font-size: 0.9rem; color: #555;
     }
 
-    /* --- CAMADAS (Burgundy bg) --- */
+    /* --- MECANISMO ÚNICO (FREQUÊNCIA 432HZ) --- */
+    .section-mechanism {
+      background-color: #fff;
+      padding: 60px 0;
+      border-top: 1px solid #eaeaea;
+    }
+    .mechanism-content {
+      background: var(--parchment);
+      padding: 40px;
+      border-radius: 12px;
+      border-left: 6px solid var(--gold);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    .mechanism-content h2 {
+      text-align: left;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .mechanism-list {
+      margin-top: 25px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      border: 1px solid var(--gold-light);
+    }
+    .mechanism-list h4 {
+      color: var(--burgundy);
+      font-family: 'Cinzel', serif;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+    .mechanism-list ul {
+      list-style: none;
+    }
+    .mechanism-list li {
+      margin-bottom: 15px;
+      padding-left: 30px;
+      position: relative;
+    }
+    .mechanism-list li::before {
+      content: '✔';
+      position: absolute; left: 0; top: 0;
+      color: var(--safe-green); font-weight: bold;
+    }
+
+    /* --- CAMADAS (ESCURA) --- */
     .section-layers {
       background-color: var(--burgundy);
       color: #fff;
@@ -264,7 +314,6 @@
       min-width: 300px;
       text-align: center;
     }
-    /* Estilo de placeholder elegante para a imagem */
     .mockup-placeholder {
       width: 100%;
       height: auto;
@@ -379,7 +428,6 @@
 <body>
 
   <!-- ==================== 1. HERO (VÍDEO) ==================== -->
-  <!-- O botão CTA foi removido daqui para evitar cliques antes da hora -->
   <section class="hero" id="hero">
     <div class="container">
       <div class="kicker">A Descoberta científica que Abalou o Vaticano</div>
@@ -397,6 +445,15 @@
           </div>
           <div class="overlay-text">Seu vídeo já começou...</div>
         </div>
+      </div>
+
+      <!-- BOTÃO INICIAL COM DELAY DE 3 MINUTOS (180.000 ms) -->
+      <div id="hero-btn-container" class="hidden-delay" style="text-align:center; margin-top: 40px;">
+        <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn" id="cta-hero">
+          <span class="cta-icon"></span>
+          SIM, QUERO ACESSAR O MATERIAL SEGURO AGORA
+        </a>
+        <small class="cta-note">Pagamento único · Acesso imediato · 7 dias de garantia</small>
       </div>
     </div>
   </section>
@@ -433,19 +490,32 @@
       <div class="sources-box">
         <p><strong>Fontes Oficiais:</strong> Artigo de Grigory Kessel na revista <em>New Testament Studies</em> (2023, acesso aberto) e comunicado oficial da <em>Academia Austríaca de Ciências</em>.</p>
       </div>
-      
-      <!-- PRIMEIRO BOTÃO CTA AQUI (Mais para baixo na jornada) -->
-      <div style="text-align:center; margin-top: 50px;">
-        <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn">
-          <span class="cta-icon"></span>
-          SIM, QUERO ACESSAR O MATERIAL SEGURO AGORA - R$&nbsp;37,99
-        </a>
-        <small class="cta-note">Pagamento único · Acesso imediato · 7 dias de garantia</small>
+    </div>
+  </section>
+
+  <!-- ==================== 3. MECANISMO ÚNICO (FREQUÊNCIA E CIÊNCIA) ==================== -->
+  <section class="section section-mechanism" id="mecanismo">
+    <div class="container container-narrow">
+      <div class="mechanism-content">
+        <h2>A Ciência por trás do Destrave: Por que o seu dinheiro está travado?</h2>
+        <p>Não é falta de esforço. Não é falta de fé. <strong>É a frequência errada.</strong></p>
+        <p>A ciência moderna comprovou que o estresse financeiro, as dívidas e a ansiedade fazem o nosso cérebro operar em ondas Beta Altas (frequência do caos). Quando você está nessa frequência, você não enxerga oportunidades, toma decisões ruins e repele a prosperidade. É como tentar sintonizar uma rádio de música clássica na estação de rock pesado.</p>
+        <p style="margin-top: 15px;">A grande descoberta de Kessel não revelou apenas as palavras originais de Mateus, mas a exata <em>frequência vibracional</em> dessas palavras em aramaico.</p>
+        
+        <div class="mechanism-list">
+          <h4>A Transformação Prática em 7 Dias</h4>
+          <p style="margin-bottom: 15px; font-size: 0.95rem;">Ao unir as palavras resgatadas do Capítulo Oculto com o Áudio Subliminar em 432Hz (Frequência Universal), você vai:</p>
+          <ul>
+            <li><strong>Dia 1 ao 3 (Limpeza):</strong> Desativar a ansiedade financeira que bloqueia a sua visão de oportunidades.</li>
+            <li><strong>Dia 4 ao 5 (Sintonia):</strong> Reprogramar o seu subconsciente para aceitar a prosperidade como o seu estado natural, sem culpa.</li>
+            <li><strong>Dia 6 ao 7 (Manifestação):</strong> Começar a enxergar portas abertas, clientes novos ou resoluções financeiras que estavam escondidas pela névoa do estresse.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== 3. CAMADAS (ESCURA) ==================== -->
+  <!-- ==================== 4. CAMADAS (ESCURA) ==================== -->
   <section class="section section-layers" id="camadas">
     <div class="container container-narrow">
       <h2>Quando a promessa fica por baixo de camadas</h2>
@@ -468,7 +538,7 @@
     </div>
   </section>
 
-  <!-- ==================== 4. TANGIBILIDADE E OFERTA ==================== -->
+  <!-- ==================== 5. TANGIBILIDADE E OFERTA ==================== -->
   <section class="section section-offer" id="oferta">
     <div class="container container-narrow">
       
@@ -478,7 +548,7 @@
       <!-- ÁREA DO MOCKUP -->
       <div class="mockup-section">
         <div class="mockup-image-container">
-          <!-- IMAGEM ILUSTRATIVA DE UM LIVRO ANTIGO (Você pode trocar a URL abaixo pela imagem do seu Mockup real) -->
+          <!-- IMAGEM ILUSTRATIVA DE UM LIVRO ANTIGO (Substitua pela sua imagem 3D) -->
           <img src="https://images.unsplash.com/photo-1601296200639-89349ce78248?auto=format&fit=crop&w=600&q=80" alt="O Capítulo Oculto" class="mockup-placeholder">
         </div>
         <div class="mockup-details">
@@ -513,7 +583,7 @@
     </div>
   </section>
 
-  <!-- ==================== 5. GARANTIA ==================== -->
+  <!-- ==================== 6. GARANTIA ==================== -->
   <section class="section section-guarantee" id="garantia">
     <div class="container">
       <div class="guarantee-card">
@@ -524,7 +594,7 @@
     </div>
   </section>
 
-  <!-- ==================== 6. PERGUNTAS FREQUENTES ==================== -->
+  <!-- ==================== 7. PERGUNTAS FREQUENTES ==================== -->
   <section class="section section-faq" id="faq">
     <div class="container container-narrow">
       <h2>Perguntas frequentes</h2>
@@ -553,7 +623,7 @@
     </div>
   </section>
 
-  <!-- ==================== 7. RODAPÉ LEGAL ==================== -->
+  <!-- ==================== 8. RODAPÉ LEGAL ==================== -->
   <footer id="footer">
     <div class="container">
       <div class="footer-legal">
@@ -576,7 +646,7 @@
   </a>
 
   <!-- =====================================================
-       SCRIPTS YOUTUBE & TRACKING AVANÇADO
+       SCRIPTS YOUTUBE, DELAY E TRACKING AVANÇADO
        ===================================================== -->
   <script src="https://www.youtube.com/iframe_api"></script>
   <script>
@@ -601,7 +671,15 @@
       });
     }
 
-    // TRACKING CAPI E REPASSE UTM (MANTIDO INTACTO)
+    // SCRIPT DE DELAY DE 3 MINUTOS (180.000 ms) PARA O BOTÃO DO VÍDEO
+    setTimeout(function() {
+      var elements = document.querySelectorAll('.hidden-delay');
+      elements.forEach(function(el) {
+        el.classList.remove('hidden-delay');
+      });
+    }, 180000);
+
+    // TRACKING CAPI E REPASSE UTM
     document.addEventListener("DOMContentLoaded", function() {
       const buyLinks = document.querySelectorAll('a[href*="pay.cakto.com.br"]');
       let urlParams = window.location.search;
