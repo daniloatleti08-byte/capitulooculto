@@ -1,52 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>O Capítulo Oculto — Prosperidade | Casa de São Bento</title>
-  <meta name="description"
-    content="Cientistas usam luz ultravioleta e revelam o Capítulo Oculto da Bíblia. Descubra o verdadeiro segredo da prosperidade e paz mental censurado há mais de 1.500 anos.">
-  <meta name="theme-color" content="#070604">
-  <meta property="og:title" content="O Capítulo Oculto — Prosperidade">
-  <meta property="og:description"
-    content="Apagado por mãos humanas há mais de 1.500 anos, este texto sagrado acaba de ser recuperado. Descubra o verdadeiro segredo da prosperidade e paz mental.">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Cientistas usam luz ultravioleta e revelam o Capítulo Oculto da Bíblia. Descubra o verdadeiro segredo da prosperidade e paz mental censurado há mais de 1.500 anos.">
+  <meta name="theme-color" content="#4a0e17">
+  
+  <!-- =====================================================
+       FONTES (Cinzel para Títulos / Lora para Texto - Estilo Bíblico/Clássico)
+       ===================================================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@500;700&display=swap" rel="stylesheet">
 
   <!-- =====================================================
        META PIXEL
        ===================================================== -->
   <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1684026826038026');
     fbq('track', 'PageView');
   </script>
   <noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1684026826038026&ev=PageView&noscript=1" />
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1684026826038026&ev=PageView&noscript=1"/>
   </noscript>
 
-  <link rel="stylesheet" href="style.css">
-
+  <!-- =====================================================
+       ESTILOS (Design Católico, Elegante e Focado no Público 50+)
+       ===================================================== -->
   <style>
-    /* ==========================================
-       ESTILOS DO OVERLAY DE SOM (VSL)
-       ========================================== */
+    :root {
+      /* Cores Católicas Clássicas */
+      --burgundy: #4a0e17; /* Vermelho escuro/Vinho */
+      --burgundy-dark: #2a050a;
+      --gold: #c5a059;     /* Dourado elegante, não amarelo berrante */
+      --gold-light: #e8d5a5;
+      --parchment: #fdfbf7; /* Cor de pergaminho/papel antigo para fundo */
+      --text-dark: #2c2825;
+      --text-light: #ffffff;
+      --safe-green: #2e7d32; /* Verde escuro para botões de compra (segurança) */
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lora', serif; /* Fonte serifada para facilitar leitura de textos longos e dar ar de livro */
+      background-color: var(--parchment);
+      color: var(--text-dark);
+      line-height: 1.6;
+      font-size: 18px; /* Fonte maior para público 50+ */
+    }
+
+    h1, h2, h3, .kicker, .fact-label, .guarantee-days {
+      font-family: 'Cinzel', serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .container-narrow { max-width: 800px; }
+
+    /* --- BOTOES (CTA) --- */
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--safe-green); /* Verde transmite segurança */
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);
+      transition: all 0.3s ease;
+      width: 100%;
+      max-width: 500px;
+      margin: 20px auto 5px auto;
+      text-align: center;
+      border: 2px solid #1b5e20;
+    }
+    .cta-btn:hover { background-color: #1b5e20; transform: translateY(-2px); }
+    .cta-btn-large { font-size: 1.2rem; padding: 25px 30px; max-width: 600px; }
+    
+    .cta-icon::before {
+      content: '🔒'; /* Ícone de cadeado reforça segurança */
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+    
+    .cta-note {
+      display: block;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #666;
+      font-family: 'Inter', sans-serif;
+      margin-bottom: 30px;
+    }
+
+    /* --- HERO SECTION --- */
+    .hero {
+      background: linear-gradient(to bottom, var(--burgundy-dark), var(--burgundy));
+      color: var(--text-light);
+      padding: 60px 0 40px 0;
+      text-align: center;
+      border-bottom: 4px solid var(--gold);
+    }
+    .hero .kicker {
+      color: var(--gold);
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      line-height: 1.3;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .hero .highlight { color: var(--gold); }
+    .hero .lead {
+      font-size: 1.2rem;
+      color: var(--gold-light);
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      font-style: italic;
+    }
+
+    /* --- VIDEO VSL --- */
     .video-container {
       position: relative;
       width: 100%;
@@ -55,568 +151,479 @@
       border-radius: 8px;
       overflow: hidden;
       aspect-ratio: 16/9;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+      border: 3px solid var(--gold);
     }
-
     #youtube-player {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: 0; left: 0; width: 100%; height: 100%;
       pointer-events: none;
-      /* Impede o usuário de pausar clicando no vídeo antes de tirar do mudo */
     }
-
-    /* A camada escura que fica por cima do vídeo */
     #unmute-overlay {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 10;
-      cursor: pointer;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(42, 5, 10, 0.85); /* Fundo vinho escuro transparente */
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      z-index: 10; cursor: pointer;
     }
-
-    /* O botão gigante piscando */
     .unmute-btn {
-      background-color: #d4af37;
-      /* Dourado */
-      color: #000;
-      font-family: 'Inter', sans-serif;
-      font-weight: 800;
-      font-size: 1.2rem;
-      padding: 15px 30px;
-      border-radius: 50px;
-      border: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      animation: pulse 1.5s infinite;
-      box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+      background-color: var(--gold);
+      color: var(--burgundy-dark);
+      font-family: 'Cinzel', serif;
+      font-weight: 800; font-size: 1.3rem;
+      padding: 15px 40px; border-radius: 5px;
+      border: 2px solid #fff;
+      display: flex; align-items: center; gap: 15px;
+      animation: pulse 2s infinite;
+      box-shadow: 0 0 20px rgba(197, 160, 89, 0.6);
     }
-
-    .unmute-btn svg {
-      width: 24px;
-      height: 24px;
-      fill: #000;
-    }
-
+    .unmute-btn svg { width: 28px; height: 28px; fill: var(--burgundy-dark); }
     .overlay-text {
-      color: #fff;
-      margin-top: 15px;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.9rem;
-      font-weight: 500;
+      color: #fff; margin-top: 20px;
+      font-family: 'Lora', serif; font-size: 1.1rem; font-style: italic;
     }
 
     @keyframes pulse {
-      0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
-      }
-
-      50% {
-        transform: scale(1.05);
-        box-shadow: 0 0 0 15px rgba(212, 175, 55, 0);
-      }
-
-      100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
-      }
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.7); }
+      50% { transform: scale(1.03); box-shadow: 0 0 0 15px rgba(197, 160, 89, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(197, 160, 89, 0); }
     }
 
-    /* Ocultar CTA durante delay */
-    .hidden-delay {
-      display: none !important;
+    /* --- SEÇÕES GERAIS --- */
+    .section { padding: 70px 0; }
+    .section h2 {
+      font-size: 2rem;
+      color: var(--burgundy);
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    .text-center { text-align: center; }
+
+    /* --- FATOS VERIFICÁVEIS --- */
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .fact-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      border-top: 4px solid var(--gold);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .fact-card-wide { grid-column: 1 / -1; }
+    .fact-label {
+      color: var(--burgundy);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--gold-light);
+      padding-bottom: 5px;
+    }
+    .sources-box {
+      margin-top: 40px; padding: 20px;
+      background-color: #f4efdf; border-left: 4px solid var(--gold);
+      font-size: 0.9rem; color: #555;
     }
 
-    /* Botão WhatsApp Fixo */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
+    /* --- CAMADAS (Burgundy bg) --- */
+    .section-layers {
+      background-color: var(--burgundy);
+      color: #fff;
+      border-top: 2px solid var(--gold);
+      border-bottom: 2px solid var(--gold);
+    }
+    .section-layers h2 { color: var(--gold); }
+    .layers-stack { margin-top: 40px; display: flex; flex-direction: column; gap: 20px; }
+    .layer-item {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(197, 160, 89, 0.3);
+      padding: 25px; border-radius: 8px;
+    }
+    .layer-item strong { color: var(--gold); font-family: 'Cinzel', serif; font-size: 1.2rem; display: block; margin-bottom: 5px; }
+
+    /* --- TANGIBILIDADE / MOCKUP --- */
+    .mockup-section {
       display: flex;
-      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
       align-items: center;
-      text-decoration: none;
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-      z-index: 1000;
-      transition: transform 0.3s ease;
+      margin: 50px 0;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border: 1px solid var(--gold-light);
+    }
+    .mockup-image-container {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+    /* Estilo de placeholder elegante para a imagem */
+    .mockup-placeholder {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      border: 3px solid var(--parchment);
+    }
+    .mockup-details {
+      flex: 1;
+      min-width: 300px;
+    }
+    .mockup-details h3 {
+      font-size: 1.5rem;
+      color: var(--burgundy);
+      margin-bottom: 20px;
+    }
+    .mockup-list { list-style: none; }
+    .mockup-list li {
+      margin-bottom: 15px;
+      padding-left: 30px;
+      position: relative;
+      font-size: 1.1rem;
+    }
+    .mockup-list li::before {
+      content: '✓';
+      position: absolute; left: 0; top: 0;
+      color: var(--gold); font-weight: bold; font-size: 1.2rem;
     }
 
-    .whatsapp-btn:hover {
-      transform: scale(1.1);
+    /* --- OFERTA E PREÇO --- */
+    .price-block {
+      text-align: center;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      border: 2px dashed var(--gold);
+      margin-top: 20px;
+    }
+    .price-label { color: #666; font-size: 1.1rem; text-decoration: line-through; }
+    .price-value {
+      font-size: 4rem;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      color: var(--burgundy);
+      line-height: 1;
+      margin: 10px 0;
+    }
+    .price-cents { font-size: 2rem; vertical-align: top; }
+    .price-info { color: #444; font-size: 1.1rem; font-weight: 500; margin-bottom: 30px; }
+
+    /* --- GARANTIA --- */
+    .section-guarantee {
+      background-color: var(--burgundy-dark);
+      color: #fff;
+      text-align: center;
+    }
+    .section-guarantee h2 { color: var(--gold); }
+    .guarantee-card {
+      max-width: 600px;
+      margin: 0 auto;
+      border: 2px solid var(--gold);
+      padding: 40px;
+      border-radius: 10px;
+      background: url('data:image/svg+xml;utf8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="%23c5a059" fill-opacity="0.1"/></svg>');
+    }
+    .guarantee-badge {
+      font-size: 3rem;
+      color: var(--gold);
+      margin-bottom: 20px;
     }
 
-    .whatsapp-btn svg {
-      width: 35px;
-      height: 35px;
-      fill: white;
+    /* --- FAQ --- */
+    .faq-item {
+      background: #fff;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-left: 4px solid var(--burgundy);
     }
+    .faq-item summary {
+      padding: 20px;
+      font-family: 'Cinzel', serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      color: var(--burgundy);
+      outline: none;
+    }
+    .faq-item p { padding: 0 20px 20px 20px; color: #555; }
+
+    /* --- WHATSAPP FIXO --- */
+    .whatsapp-btn {
+      position: fixed; bottom: 20px; right: 20px;
+      background-color: #25d366; color: white;
+      border-radius: 50%; width: 65px; height: 65px;
+      display: flex; justify-content: center; align-items: center;
+      box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+      z-index: 1000; transition: transform 0.3s ease;
+    }
+    .whatsapp-btn:hover { transform: scale(1.1); }
+    .whatsapp-btn svg { width: 35px; height: 35px; fill: white; }
+
+    /* --- RODAPÉ --- */
+    footer {
+      background: #111; color: #888;
+      padding: 40px 0; text-align: center;
+      font-family: 'Inter', sans-serif; font-size: 0.9rem;
+    }
+    .footer-links a { color: var(--gold); text-decoration: none; margin: 0 10px; }
   </style>
 </head>
-
 <body>
 
+  <!-- ==================== 1. HERO (VÍDEO) ==================== -->
+  <!-- O botão CTA foi removido daqui para evitar cliques antes da hora -->
   <section class="hero" id="hero">
     <div class="container">
       <div class="kicker">A Descoberta científica que Abalou o Vaticano</div>
-      <h1>Cientistas usam luz ultravioleta e revelam o <span class="highlight">"Capítulo Oculto"</span> da Bíblia capaz
-        de destravar sua vida em 7 dias.</h1>
+      <h1>Cientistas usam luz ultravioleta e revelam o <span class="highlight">"Capítulo Oculto"</span> da Bíblia capaz de destravar sua vida em 7 dias.</h1>
       <p class="lead">Apagado por mãos humanas há mais de 1.500 anos, este texto sagrado acaba de ser recuperado.</p>
 
-      <!-- NOVO PLAYER VSL OTIMIZADO -->
       <div class="video-container">
-        <!-- Onde a API do YouTube vai injetar o player -->
         <div id="youtube-player"></div>
-
-        <!-- A Sobreposição (Overlay) com o botão de unmute -->
         <div id="unmute-overlay">
           <div class="unmute-btn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-              <path
-                d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z" />
+              <path d="M533.6 32.5C598.5 85.2 640 165.8 640 256s-41.5 170.7-106.4 223.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C557.5 398.2 592 331.2 592 256s-34.5-142.2-88.7-186.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM473.1 107c43.2 35.2 70.9 88.9 70.9 149s-27.7 113.8-70.9 149c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C475.3 341.3 496 301.1 496 256s-20.7-85.3-53.2-111.8c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5zM301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3z"/>
             </svg>
             CLIQUE AQUI PARA OUVIR O SOM
           </div>
           <div class="overlay-text">Seu vídeo já começou...</div>
         </div>
       </div>
-
-      <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn hidden-" id="cta-hero"
-        style="margin-top: 30px;">
-        <span class="cta-icon"></span>
-        QUERO REVELAR O CAPÍTULO OCULTO
-      </a>
-      <small class="cta-note hidden-delay">Pagamento único · Acesso imediato · PIX e cartão · 7 dias de garantia</small>
     </div>
   </section>
 
-  <!-- ==================== 3. FATOS VERIFICÁVEIS ==================== -->
+  <!-- ==================== 2. FATOS VERIFICÁVEIS ==================== -->
   <section class="section section-facts" id="fatos">
     <div class="container">
-      <div class="section-header">
-        <div class="kicker kicker-gold">O MISTÉRIO REVELADO SOB A LUZ</div>
-        <h2>Você já sentiu que ora, ora... e nada na sua vida sai do lugar?</h2>
-        <p class="section-intro">A culpa pode não ser da sua fé. O bloqueio que você sente na sua vida financeira e
-          espiritual tem uma explicação histórica que o mundo só descobriu agora.</p>
-      </div>
+      <h2>Você já sentiu que ora, ora... e nada na sua vida sai do lugar?</h2>
+      <p class="text-center" style="font-size:1.2rem; max-width:800px; margin:0 auto;">A culpa pode não ser da sua fé. O bloqueio que você sente na sua vida financeira e espiritual tem uma explicação histórica que o mundo só descobriu agora.</p>
 
       <div class="facts-grid">
         <div class="fact-card">
           <div class="fact-label">QUEM</div>
-          <p>Em 2023, o pesquisador Grigory Kessel, trabalhando para a Academia Austríaca de Ciências, fez algo
-            impensável. Com equipamentos avançados de luz ultravioleta, ele olhou para as páginas de um antigo
-            manuscrito na Biblioteca do Vaticano e viu algo brilhando no fundo.</p>
+          <p>Em 2023, o pesquisador Grigory Kessel, trabalhando para a Academia Austríaca de Ciências, fez algo impensável. Com equipamentos avançados de luz ultravioleta, ele olhou para as páginas de um antigo manuscrito na Biblioteca do Vaticano e viu algo brilhando no fundo.</p>
         </div>
         <div class="fact-card">
-          <div class="fact-label">OQUE ENCONTRARAM</div>
-          <p>Eram palavras. Uma tradução em aramaico/siríaco antigo do Evangelho de Mateus. O impressionante? Esse texto
-            foi apagado e raspado duas vezes pelos monges na Idade Média.</p>
+          <div class="fact-label">O QUE ENCONTRARAM</div>
+          <p>Eram palavras. Uma tradução em aramaico/siríaco antigo do Evangelho de Mateus. O impressionante? Esse texto foi apagado e raspado duas vezes pelos monges na Idade Média.</p>
         </div>
         <div class="fact-card">
           <div class="fact-label">COMO</div>
           <p>Fotografia com luz ultravioleta, que faz a tinta apagada voltar a aparecer.</p>
         </div>
         <div class="fact-card">
-          <div class="fact-label">PORQUE ELES TENTARAM APAGAR AS PALAVRAS EXATAS DE JESUS?</div>
-          <p>Se você se sente cansado, trabalha e não prospera, e acha que suas orações não são ouvidas, preste muita
-            atenção. A versão que lemos hoje na Bíblia moderna perdeu a "chave" da ação.
-
-            Enquanto a Bíblia comum esconde detalhes cruciais sobre como "pedir e trabalhar", o texto siríaco iluminado
-            pela luz UV revelou as ações exatas que os primeiros cristãos usavam para atrair prosperidade e descanso. O
-            segredo da verdadeira manifestação havia sido apagado. Até agora.</p>
+          <div class="fact-label">PORQUE TENTARAM APAGAR?</div>
+          <p>Se você se sente cansado, trabalha e não prospera, e acha que suas orações não são ouvidas, preste muita atenção. A versão que lemos hoje na Bíblia moderna perdeu a "chave" da ação. O texto siríaco iluminado pela luz UV revelou as ações exatas que os primeiros cristãos usavam para atrair prosperidade e descanso.</p>
         </div>
         <div class="fact-card fact-card-wide">
           <div class="fact-label">A SURPRESA</div>
-          <p>É um "manuscrito inteiro". Há cerca de 1.300 anos o texto foi raspado para reaproveitar o pergaminho, que
-            era caro. Escreveram outro texto por cima; mais tarde, esse também foi apagado e deu lugar a um terceiro.
-            Resultado: <strong>três camadas de escrita</strong>, com o Evangelho na mais profunda.</p>
+          <p>É um "manuscrito inteiro". Há cerca de 1.300 anos o texto foi raspado para reaproveitar o pergaminho, que era caro. Escreveram outro texto por cima; mais tarde, esse também foi apagado e deu lugar a um terceiro. Resultado: <strong>três camadas de escrita</strong>, com o Evangelho na mais profunda.</p>
         </div>
       </div>
 
       <div class="sources-box">
-        <p><strong>Fontes:</strong> artigo de Grigory Kessel na revista <a
-            href="https://doi.org/10.1017/S0028688523000097" target="_blank" rel="noopener">New Testament Studies</a>
-          (2023, acesso aberto) e <a href="https://www.oeaw.ac.at/en/news/a-hidden-satisfying-satisfying-text"
-            target="_blank" rel="noopener">comunicado da Academia Austríaca de Ciências</a>.</p>
+        <p><strong>Fontes Oficiais:</strong> Artigo de Grigory Kessel na revista <em>New Testament Studies</em> (2023, acesso aberto) e comunicado oficial da <em>Academia Austríaca de Ciências</em>.</p>
       </div>
-
-      <div class="transparency-box">
-        <div class="transparency-icon"></div>
-        <div>
-          <strong>Para ser transparente:</strong> A descoberta achado nunca visto na histórica. Ele fala dos segredos
-          antigos de atrair prosperidade. Ele foi traduzido por nós para o Portugues do Brasil.
-        </div>
+      
+      <!-- PRIMEIRO BOTÃO CTA AQUI (Mais para baixo na jornada) -->
+      <div style="text-align:center; margin-top: 50px;">
+        <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn">
+          <span class="cta-icon"></span>
+          SIM, QUERO ACESSAR O MATERIAL SEGURO AGORA - R$&nbsp;37,99
+        </a>
+        <small class="cta-note">Pagamento único · Acesso imediato · 7 dias de garantia</small>
       </div>
     </div>
   </section>
 
-  <!-- ==================== 4. PONTE ==================== -->
-  <section class="section section-bridge" id="ponte">
-    <div class="container container-narrow">
-      <h2>A FREQUÊNCIA ORIGINAL</h2>
-
-      <div class="bible-quote">
-        <p>"Uma mina de ouro espiritual, agora decodificada para as suas mãos."</p>
-      </div>
-
-      <p>Nós analisamos os detalhes dessa descoberta acadêmica e traduzimos a sabedoria daquele manuscrito em um passo a
-        passo simples. Você não precisa ir ao Vaticano para acessar essa frequência.</p>
-
-      <p>Apresentamos: O Capítulo Oculto: A Frequência Original. A tradução facilitada para você aplicar a sabedoria
-        exata desse manuscrito milenar na sua vida hoje.</p>
-
-      <p class="emphasis-text">Tudo o que você vai acessar em instantes:</p>
-    </div>
-  </section>
-
-  <!-- ==================== 5. CAMADAS ==================== -->
+  <!-- ==================== 3. CAMADAS (ESCURA) ==================== -->
   <section class="section section-layers" id="camadas">
     <div class="container container-narrow">
       <h2>Quando a promessa fica por baixo de camadas</h2>
-
-      <p>No manuscrito de Kessel, o texto original nunca desapareceu. Ficou coberto, duas vezes.</p>
-
-      <p>Na vida, muita gente passa por algo parecido: faz a sua parte, trabalha, reza, se esforça… e, por cima da
-        promessa de descanso, vão se acumulando camadas:</p>
+      <p>No manuscrito de Kessel, o texto original nunca desapareceu. Ficou coberto, duas vezes. Na vida, muita gente passa por algo parecido: faz a sua parte, trabalha, reza, se esforça… e, por cima da promessa de descanso, vão se acumulando camadas de estresse e dívidas.</p>
 
       <div class="layers-stack">
-        <div class="layer-item layer-3">
-          <div class="layer-icon"></div>
-          <div>
-            <strong>A História da Descoberta:</strong> O dossiê completo de como a ciência revelou o palimpsesto
-            escondido no Vaticano por mais de 15 séculos, detalhando o que foi alterado.
-          </div>
+        <div class="layer-item">
+          <strong>A História da Descoberta</strong> 
+          O dossiê completo de como a ciência revelou o palimpsesto escondido no Vaticano por mais de 15 séculos, detalhando o que foi alterado.
         </div>
-        <div class="layer-item layer-2">
-          <div class="layer-icon"></div>
-          <div>
-            <strong>A Oração Original Traduzida</strong> A tradução completa da Oração Oculta Siríca que manifesta
-            prosperidade".
-          </div>
+        <div class="layer-item">
+          <strong>A Oração Original Traduzida</strong> 
+          A tradução completa da Oração Oculta Siríaca que manifesta prosperidade.
         </div>
-        <div class="layer-item layer-1">
-          <div class="layer-icon"></div>
-          <div>
-            <strong>As 7 Chaves de Destrave:</strong> O método prático para usar as palavras desse capítulo para
-            destravar sua mente financeira e encontrar o descanso prometido por Mateus.
-          </div>
+        <div class="layer-item">
+          <strong>As 7 Chaves de Destrave</strong> 
+          O método prático para usar as palavras desse capítulo para destravar sua mente financeira e encontrar o descanso prometido por Mateus.
         </div>
       </div>
-  </section>
-
-  <!-- ==================== 6. MÉTODO ==================== -->
-  <section class="section section-method" id="metodo">
-    <div class="container container-narrow">
-      <h2>O Método da Luz: enxergar, iluminar, praticar</h2>
-
-      <p> BÔNUS EXCLUSIVO INCLUSO (Gratuito apenas hoje)</p>
-
-      <div class="method-steps">
-        <div class="method-step">
-          <div class="method-number">1</div>
-          <div class="method-content">
-            <h3>Áudio Subliminar da Oração Original (Frequência 432Hz)</h3>
-            <p>O segredo não é apenas ler as palavras originais, é entrar na frequência delas. Você receberá um áudio
-              MP3 gravado com uma tecnologia subliminar na frequência de 432Hz (a frequência do universo).
-
-              Ele contém a intenção e a oração baseada na tradução aramaica/siríaca original para você ouvir enquanto
-              dorme. Descanse enquanto sua mente subconsciente é reprogramada para aceitar a verdadeira prosperidade que
-              foi devolvida ao mundo.</p>
-
-          </div>
-        </div>
-  </section>
-
-  <!-- CTA intermediário -->
-  <section class="section section-cta-mid" id="cta-mid">
-    <div class="container" style="text-align:center;">
-      <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn">
-        <span class="cta-icon"></span>
-        QUERO REVELAR O CAPÍTULO OCULTO
-      </a>
-      <small class="cta-note">Pagamento único · Acesso imediato · PIX e cartão · 7 dias de garantia</small>
     </div>
   </section>
 
-  <!-- ==================== 7. O QUE VOCÊ RECEBE + PREÇO ==================== -->
+  <!-- ==================== 4. TANGIBILIDADE E OFERTA ==================== -->
   <section class="section section-offer" id="oferta">
-
-    <div class="offer-box">
-      <div class="deliverable-item">
-        <span class="deliverable-icon"></span>
-        <div>
-          <h3>Guia "O conhecimento contido nesses manuscritos não tem preço."</h3>
-          <p>Se fossemos cobrar por um curso de manifestação com base nessas descobertas, o valor seria facilmente de R$
-            197,00.</p>
-        </div>
-        <h3>Mas o seu acesso completo hoje (Guia + Bônus Áudio Subliminar) não custará nem perto disso.</h3>
-      </div>
-    </div>
-
-    <!-- Preço -->
-    <div class="price-block">
-      <p class="price-label">De R$ 97,00 por apenas</p>
-      <div class="price-value">R$&nbsp;37<span class="price-cents">,99</span></div>
-      <p class="price-info">Pagamento único. Acesso imediato após a confirmação do pagamento.</p>
-
-      <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn cta-btn-large" id="cta-offer">
-        <span class="cta-icon"></span>
-        DESTRAVAR MEU ACESSO AGORA POR R$ 37,99
-      </a>
-      <small class="cta-note">Você será levado ao pagamento seguro da Cakto. No PIX, a confirmação costuma ser em
-        segundos.</small>
-    </div>
-    </div>
-  </section>
-
-  <!-- ==================== 8. PARA QUEM É ==================== -->
-  <section class="section section-audience" id="para-quem">
     <div class="container container-narrow">
-      <h2>Este guia é para você se…</h2>
+      
+      <h2 style="margin-bottom: 10px;">Tudo o que você vai receber hoje:</h2>
+      <p class="text-center">Apresentamos: O Capítulo Oculto - A Frequência Original.</p>
 
-      <div class="audience-grid">
-        <div class="audience-card audience-yes">
-          <h3> É para você</h3>
-          <ul>
-            <li>Quer reler Mateus com calma, sem pressa e sem complicação;</li>
-            <li>Sente o dia pesado e prefere um plano pequeno, que caiba na rotina;</li>
-            <li>Gosta de conhecer a história real por trás das Escrituras.</li>
-          </ul>
+      <!-- ÁREA DO MOCKUP -->
+      <div class="mockup-section">
+        <div class="mockup-image-container">
+          <!-- IMAGEM ILUSTRATIVA DE UM LIVRO ANTIGO (Você pode trocar a URL abaixo pela imagem do seu Mockup real) -->
+          <img src="https://images.unsplash.com/photo-1601296200639-89349ce78248?auto=format&fit=crop&w=600&q=80" alt="O Capítulo Oculto" class="mockup-placeholder">
         </div>
-
-        <div class="audience-card audience-no">
-          <h3> Não é para você</h3>
-          <ul>
-            <li>Procura promessa de dinheiro rápido: não prometemos isso;</li>
-            <li>Espera um substituto de ajuda profissional (financeira, médica ou psicológica).</li>
+        <div class="mockup-details">
+          <h3>O Método da Luz</h3>
+          <ul class="mockup-list">
+            <li><strong>Guia Completo (PDF):</strong> Leitura facilitada com a história, a tradução e as 7 Chaves do Destrave.</li>
+            <li><strong>O Rito Prático de 7 Dias:</strong> Passo a passo devocional simples de 15 minutos por dia.</li>
+            <li><strong style="color:var(--burgundy);">BÔNUS GRATUITO:</strong> Áudio Subliminar da Oração Original.</li>
           </ul>
+          <p style="margin-top:20px; font-size:0.95rem; color:#666;">
+            <em>O áudio MP3 é gravado na frequência de 432Hz. Ele contém a intenção e a oração baseada na tradução siríaca original para você ouvir enquanto dorme.</em>
+          </p>
         </div>
       </div>
+
+      <!-- PREÇO E BOTÃO -->
+      <div class="price-block">
+        <h3 style="font-family: 'Cinzel', serif; color: var(--burgundy); margin-bottom:15px; font-size:1.5rem;">O conhecimento destes manuscritos não tem preço.</h3>
+        <p style="margin-bottom: 20px;">Se fôssemos cobrar por um curso com base nessas descobertas, o valor seria facilmente de <strong>R$ 97,00</strong>.</p>
+        
+        <p class="price-label">De R$ 97,00 por apenas</p>
+        <div class="price-value">R$&nbsp;37<span class="price-cents">,99</span></div>
+        <p class="price-info">Pagamento único. Acesso imediato no seu e-mail.</p>
+
+        <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn cta-btn-large" id="cta-offer">
+          <span class="cta-icon"></span>
+          SIM, QUERO ACESSAR O MATERIAL SEGURO AGORA
+        </a>
+        <small class="cta-note">Você será levado ao ambiente blindado da Cakto. No PIX, a liberação é imediata.</small>
+      </div>
+
     </div>
   </section>
 
-  <!-- ==================== 9. GARANTIA ==================== -->
+  <!-- ==================== 5. GARANTIA ==================== -->
   <section class="section section-guarantee" id="garantia">
     <div class="container">
       <div class="guarantee-card">
-        <div class="guarantee-badge">
-          <div class="guarantee-shield"></div>
-          <div class="guarantee-days">7 DIAS</div>
-        </div>
+        <div class="guarantee-badge">🛡️</div>
         <h2>7 Dias de Garantia Incondicional de Paz</h2>
-        <p>Seu risco é absolutamente zero. Acesse "O Capítulo Oculto", leia a descoberta e ouça a frequência original de
-          432Hz. Se sentir que o guia não é para você, nós devolvemos <strong>100% do valor</strong>, sem perguntas.</p>
+        <p style="margin-top: 15px; font-size:1.1rem;">Seu risco é absolutamente zero. Acesse "O Capítulo Oculto", leia a descoberta e ouça a frequência original de 432Hz. Se sentir que o guia não trouxe a paz e a clareza que você buscava, nós devolvemos <strong>100% do seu valor</strong>, sem letras miúdas.</p>
       </div>
     </div>
   </section>
 
-  <!-- ==================== 11. PERGUNTAS FREQUENTES ==================== -->
+  <!-- ==================== 6. PERGUNTAS FREQUENTES ==================== -->
   <section class="section section-faq" id="faq">
     <div class="container container-narrow">
-      <h2 class="text-center">Perguntas frequentes</h2>
+      <h2>Perguntas frequentes</h2>
 
       <div class="faq-list">
         <details class="faq-item">
           <summary>Isso é um "capítulo escondido" que a Igreja ou o Vaticano ocultou?</summary>
-          <p>Não. Mateus 11 e 12 estão em qualquer Bíblia. O que veio à tona foi uma tradução muito antiga desses
-            versículos, que estava coberta por outros textos. Pergaminho era caro, e os copistas reaproveitavam as
-            folhas.</p>
+          <p>Não. Mateus 11 e 12 estão em qualquer Bíblia. O que veio à tona foi uma tradução muito antiga desses versículos, que estava coberta por outros textos. Pergaminho era caro, e os copistas reaproveitavam as folhas.</p>
         </details>
 
         <details class="faq-item">
           <summary>A descoberta prova que vou prosperar financeiramente?</summary>
-          <p>Não. É um achado histórico. O guia é devocional e não promete aumento de renda nem resultado financeiro.
-          </p>
+          <p>Não. É um achado histórico. O guia é devocional e não promete aumento de renda imediata, mas sim uma reprogramação através da frequência certa.</p>
         </details>
 
         <details class="faq-item">
-          <summary>Preciso ser católico</summary>
-          <p>O guia tem abordagem católica, mas qualquer pessoa que queira ler e rezar com Mateus 11 e 12 pode usar.</p>
+          <summary>Preciso ser católico?</summary>
+          <p>O guia tem abordagem católica e respeita a Tradição, mas qualquer pessoa que queira ler e rezar com Mateus 11 e 12 pode usar.</p>
         </details>
 
         <details class="faq-item">
-          <summary>Quanto tempo por dia</summary>
-          <p>Cerca de 10 a 15 minutos, durante 7 dias.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Como eu recebo</summary>
-          <p>Por e-mail, logo após a confirmação do pagamento.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>É assinatura</summary>
-          <p>Não. É pagamento único de R$&nbsp;37,99.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>E se eu não gostar</summary>
-          <p>Você tem 7 dias de garantia, sem perguntas.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Posso conferir as informações sobre a descoberta?</summary>
-          <p>Sim. As fontes estão na seção "O que o pesquisador realmente encontrou": o artigo científico e o comunicado
-            da Academia Austríaca de Ciências.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>O guia substitui ajuda profissional?</summary>
-          <p>Não. Se você passa por dificuldade financeira, emocional ou de saúde, busque também orientação
-            profissional.</p>
+          <summary>Como eu recebo o material?</summary>
+          <p>Você recebe o E-book (Guia PDF) e o Bônus (Áudio MP3) diretamente no seu e-mail, logo após a confirmação do pagamento.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- ==================== 12. CTA FINAL ==================== -->
-  <section class="section section-final-cta" id="cta-final">
-    <div class="container container-narrow" style="text-align:center;">
-      <h2>A tinta cobriu aquele texto por mais de mil anos. A luz levou um instante.</h2>
-
-      <p class="final-lead">Você pode reler as palavras de Jesus sobre descanso com calma, com um plano simples e em
-        poucos minutos por dia.</p>
-
-      <a href="https://pay.cakto.com.br/47nodys_1229890" class="cta-btn cta-btn-large" id="cta-final-btn">
-        <span class="cta-icon"></span>
-        SIM, QUERO O CAPÍTULO OCULTO — R$&nbsp;37,99
-      </a>
-
-      <p class="ps-text"><strong>P.S.:</strong> Se em 7 dias o guia não fizer sentido para você, devolvemos o seu
-        dinheiro. O risco é todo nosso.</p>
-    </div>
-  </section>
-
-  <!-- ==================== 13. RODAPÉ LEGAL ==================== -->
+  <!-- ==================== 7. RODAPÉ LEGAL ==================== -->
   <footer id="footer">
     <div class="container">
       <div class="footer-legal">
         <p>© 2026 Casa de São Bento · CNPJ 00.000.000/0000-00</p>
-        <div class="footer-links">
-          <a href="#">Política de Privacidade</a>
-          <a href="#">Termos de Uso</a>
-          <a href="#">Contato</a>
+        <div class="footer-links" style="margin: 15px 0;">
+          <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a> | <a href="#">Contato</a>
         </div>
       </div>
-      <p class="footer-disclaimer">
-        <strong>Aviso legal:</strong> Material devocional e educativo. Não prometemos ganhos financeiros, cura ou
-        qualquer resultado específico; a experiência varia de pessoa para pessoa. A descoberta citada é de autoria do
-        pesquisador Grigory Kessel e foi divulgada pela Academia Austríaca de Ciências, que não têm relação com este
-        produto nem o endossam. Este site não é afiliado ao Facebook, Instagram ou Meta.
+      <p class="footer-disclaimer" style="font-size: 0.8rem; max-width: 800px; margin: 0 auto; line-height: 1.5;">
+        <strong>Aviso legal:</strong> Material devocional e educativo. Não prometemos ganhos financeiros, cura ou qualquer resultado específico; a experiência varia de pessoa para pessoa. A descoberta citada é de autoria do pesquisador Grigory Kessel e foi divulgada pela Academia Austríaca de Ciências, que não têm relação com este produto nem o endossam. Este site não é afiliado ao Facebook, Instagram ou Meta.
       </p>
     </div>
   </footer>
 
-  <!-- Botão Flutuante do WhatsApp -->
-  <a href="https://wa.me/5511914152947?text=Olá!%20Gostaria%20de%20tirar%20dúvidas%20sobre%20O%20Capítulo%20Oculto%20-%20Frequência%20da%20Prosperidade."
-    target="_blank" class="whatsapp-btn" aria-label="Fale conosco no WhatsApp">
+  <!-- ==================== WHATSAPP ==================== -->
+  <a href="https://wa.me/5511914152947?text=Olá!%20Gostaria%20de%20tirar%20dúvidas%20sobre%20O%20Capítulo%20Oculto%20-%20Frequência%20da%20Prosperidade." target="_blank" class="whatsapp-btn" aria-label="Fale conosco no WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-      <path
-        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33.6 0-66.7-9-95.6-26.1l-6.9-4.1-71 18.6 18.9-69.2-4.5-7.2c-18.7-29.9-28.7-64.6-28.7-100.2 0-103.9 84.6-188.5 188.6-188.5 50.4 0 97.7 19.6 133.4 55.3s55.2 82.9 55.2 133.4c0 103.9-84.6 188.6-188.6 188.6zM324 286.9c-5.5-2.7-32.5-16.1-37.5-17.9-5-1.8-8.7-2.7-12.4 2.7-3.7 5.5-14.2 17.9-17.4 21.6-3.2 3.7-6.5 4.1-12 1.4-5.5-2.7-23.2-8.5-44.2-27.2-16.3-14.6-27.3-32.6-30.5-38.1-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.5 5.5-6.4 8.3-9.6 2.7-3.2 3.7-5.5 5.5-9.1 1.8-3.7.9-7.1-.5-9.8-1.4-2.7-12.4-29.9-17-40.9-4.5-10.8-9-9.3-12.4-9.5-3.2-.2-6.9-.2-10.5-.2-3.7 0-9.6 1.4-14.6 6.9-5 5.5-19.2 18.8-19.2 45.8s19.7 53.1 22.4 56.7c2.7 3.7 38.7 59.1 93.7 82.8 13.1 5.7 23.3 9.1 31.3 11.6 13.2 4.2 25.1 3.6 34.6 2.2 10.6-1.5 32.5-13.3 37.1-26.1 4.6-12.8 4.6-23.8 3.2-26.1-1.5-2.3-5.5-3.7-11-6.4z" />
+      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33.6 0-66.7-9-95.6-26.1l-6.9-4.1-71 18.6 18.9-69.2-4.5-7.2c-18.7-29.9-28.7-64.6-28.7-100.2 0-103.9 84.6-188.5 188.6-188.5 50.4 0 97.7 19.6 133.4 55.3s55.2 82.9 55.2 133.4c0 103.9-84.6 188.6-188.6 188.6zM324 286.9c-5.5-2.7-32.5-16.1-37.5-17.9-5-1.8-8.7-2.7-12.4 2.7-3.7 5.5-14.2 17.9-17.4 21.6-3.2 3.7-6.5 4.1-12 1.4-5.5-2.7-23.2-8.5-44.2-27.2-16.3-14.6-27.3-32.6-30.5-38.1-3.2-5.5-.3-8.5 2.4-11.2 2.5-2.5 5.5-6.4 8.3-9.6 2.7-3.2 3.7-5.5 5.5-9.1 1.8-3.7.9-7.1-.5-9.8-1.4-2.7-12.4-29.9-17-40.9-4.5-10.8-9-9.3-12.4-9.5-3.2-.2-6.9-.2-10.5-.2-3.7 0-9.6 1.4-14.6 6.9-5 5.5-19.2 18.8-19.2 45.8s19.7 53.1 22.4 56.7c2.7 3.7 38.7 59.1 93.7 82.8 13.1 5.7 23.3 9.1 31.3 11.6 13.2 4.2 25.1 3.6 34.6 2.2 10.6-1.5 32.5-13.3 37.1-26.1 4.6-12.8 4.6-23.8 3.2-26.1-1.5-2.3-5.5-3.7-11-6.4z"/>
     </svg>
   </a>
 
   <!-- =====================================================
-      SCRIPTS DO YOUTUBE API E DELAY
-      ===================================================== -->
-  <!-- Carrega a API do YouTube Iframe -->
+       SCRIPTS YOUTUBE & TRACKING AVANÇADO
+       ===================================================== -->
   <script src="https://www.youtube.com/iframe_api"></script>
-
   <script>
     var player;
-
-    // Função chamada automaticamente pela API do YouTube quando ela está pronta
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('youtube-player', {
-        videoId: '7JGLUBvvteI', // <-- ID do seu vídeo do YouTube
-        playerVars: {
-          'autoplay': 1,      // Autoplay ligado
-          'mute': 1,          // PRECISA estar no mudo para o autoplay funcionar
-          'controls': 0,      // Esconde os controles nativos
-          'rel': 0,
-          'modestbranding': 1,
-          'playsinline': 1
-        },
-        events: {
-          'onReady': onPlayerReady
-        }
+        videoId: '7JGLUBvvteI',
+        playerVars: { 'autoplay': 1, 'mute': 1, 'controls': 0, 'rel': 0, 'modestbranding': 1, 'playsinline': 1 },
+        events: { 'onReady': onPlayerReady }
       });
     }
 
     function onPlayerReady(event) {
-      // Quando o vídeo carrega, ele já começa a tocar (mudo)
       event.target.playVideo();
-
-      // Configura o clique no overlay gigante
       var overlay = document.getElementById('unmute-overlay');
-      overlay.addEventListener('click', function () {
-        // Tira do mudo
+      overlay.addEventListener('click', function() {
         player.unMute();
-        // Volta para o segundo 0 para a pessoa não perder nada
         player.seekTo(0);
-        // Garante que está tocando
         player.playVideo();
-        // Permite que o usuário clique no vídeo (pausar) agora que tirou do mudo
         document.getElementById('youtube-player').style.pointerEvents = "auto";
-        // Esconde a camada do botão
         overlay.style.display = 'none';
       });
     }
 
-    // Script para exibir os botões de vendas após 2 minutos (120.000 ms)
-    setTimeout(function () {
-      var elements = document.querySelectorAll('.hidden-delay');
-      elements.forEach(function (el) {
-        el.classList.remove('hidden-delay');
-      });
-    }, 120000);
-  </script>
-  <!-- =====================================================
-       SCRIPT DE RASTREIO AVANÇADO (COM MEMÓRIA SESSION)
-       ===================================================== -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    // TRACKING CAPI E REPASSE UTM (MANTIDO INTACTO)
+    document.addEventListener("DOMContentLoaded", function() {
       const buyLinks = document.querySelectorAll('a[href*="pay.cakto.com.br"]');
       let urlParams = window.location.search;
 
-      // 1. Salvar os parâmetros na memória caso o servidor limpe a URL
       if (urlParams) {
         sessionStorage.setItem('parametros_rastreio', urlParams);
       } else {
-        // Se a URL estiver limpa, tentar recuperar da memória
         urlParams = sessionStorage.getItem('parametros_rastreio') || "";
       }
 
-      // 2. Repassar os parâmetros para os botões da Cakto
       if (urlParams) {
-        buyLinks.forEach(function (link) {
+        buyLinks.forEach(function(link) {
           if (link.href.indexOf('?') === -1) {
-            link.href += urlParams;
+            link.href += urlParams; 
           } else {
-            // Remove o '?' extra se for concatenar
-            link.href += '&' + urlParams.substring(1);
+            link.href += '&' + urlParams.substring(1); 
           }
         });
       }
 
-      // 3. Disparo do Evento InitiateCheckout no clique
-      buyLinks.forEach(function (link) {
-        link.addEventListener('click', function () {
+      buyLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
           if (typeof fbq === 'function') {
             fbq('track', 'InitiateCheckout');
           }
@@ -624,7 +631,5 @@
       });
     });
   </script>
-
 </body>
-
 </html>
