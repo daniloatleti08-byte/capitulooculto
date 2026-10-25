@@ -30,14 +30,14 @@
 
   <style>
     :root {
-      var(--burgundy): #4a0e17;
-      var(--burgundy-dark): #2a050a;
-      var(--gold): #c5a059;
-      var(--gold-light): #e8d5a5;
-      var(--parchment): #fdfbf7;
-      var(--text-dark): #2c2825;
-      var(--text-light): #ffffff;
-      var(--safe-green): #2e7d32;
+      --burgundy: #4a0e17;
+      --burgundy-dark: #2a050a;
+      --gold: #c5a059;
+      --gold-light: #e8d5a5;
+      --parchment: #fdfbf7;
+      --text-dark: #2c2825;
+      --text-light: #ffffff;
+      --safe-green: #2e7d32;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -112,17 +112,48 @@
       margin: 0 auto 40px auto; font-style: italic;
     }
 
-    /* VIDEO */
+    /* VIDEO VERTICAL (9:16) */
     .video-container {
-      position: relative; width: 100%; max-width: 800px; margin: 0 auto;
-      border-radius: 8px; overflow: hidden; aspect-ratio: 16/9;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.6); border: 3px solid #c5a059;
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 9 / 16;
+      background: #000;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+      border: 3px solid #c5a059;
     }
-    #youtube-player { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+    #youtube-player {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    /* Amplia o player horizontal e recorta as laterais para preencher o quadro vertical */
+    #youtube-player iframe {
+      position: absolute;
+      top: 0;
+      left: -108%;
+      width: 316% !important;
+      height: 100% !important;
+      max-width: none;
+      border: 0;
+    }
     #unmute-overlay {
       position: absolute; top: 0; left: 0; width: 100%; height: 100%;
       background: rgba(42, 5, 10, 0.85); display: flex; flex-direction: column;
       justify-content: center; align-items: center; z-index: 10; cursor: pointer;
+      padding: 20px;
+    }
+    @media (max-width: 480px) {
+      .video-container { max-width: 100%; }
+      .unmute-btn { font-size: 1rem; padding: 12px 16px; gap: 8px; }
+      .overlay-text { font-size: 0.95rem; }
     }
     .unmute-btn {
       background-color: #c5a059; color: #2a050a; font-family: 'Cinzel', serif;
