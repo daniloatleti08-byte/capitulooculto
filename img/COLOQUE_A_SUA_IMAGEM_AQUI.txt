@@ -1,0 +1,2 @@
+Guarde a imagem da capa gerada com o nome exato: capa-produto.jpg
+Substitua este ficheiro por essa imagem.

@@ -182,7 +182,19 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid #e8d5a5;
     }
     .mockup-image-container { flex: 1; min-width: 300px; text-align: center; }
-    .mockup-placeholder { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); border: 3px solid #fdfbf7; }
+    
+    /* ESTILOS DA IMAGEM DA CAPA */
+    .mockup-img {
+      width: 100%;
+      max-width: 450px; /* Evita que a imagem fique muito grande */
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      border: 3px solid #fdfbf7;
+      display: block;
+      margin: 0 auto;
+    }
+    
     .mockup-details { flex: 1; min-width: 300px; }
     .mockup-details h3 { font-size: 1.5rem; color: #4a0e17; margin-bottom: 20px; }
     .mockup-list { list-style: none; }
@@ -318,8 +330,8 @@
       <!-- MOCKUP -->
       <div class="mockup-section">
         <div class="mockup-image-container">
-          <!-- IMAGEM DO PRODUTO AQUI -->
-          <img src="capa-capitulo.jpg" alt="O Capítulo Oculto" class="mockup-placeholder">
+          <!-- AQUI ESTÁ A IMAGEM REFERENCIADA NA PASTA img/ -->
+          <img src="img/capa-produto.jpg" alt="O Capítulo Oculto" class="mockup-img">
         </div>
         <div class="mockup-details">
           <h3>O Capítulo Oculto: A Frequência Original</h3>
